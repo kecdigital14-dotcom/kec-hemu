@@ -2,28 +2,28 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Aboutbanner = ({bannertitle}) => {
+const Aboutbanner = ({ bannertitle }) => {
   return (
-    <div className="relative w-full h-[490px] overflow-hidden flex items-center justify-center ">
+    <div className="relative w-full min-h-screen overflow-hidden flex items-center justify-center">
       {/* Background Image */}
       <Image
         src="/aboutbanner.jpg"
         alt="Wind turbines on rolling hills with blue sky"
         fill
-        className="object-cover"
+        className="object-cover object-center z-0 fixed top-0 left-0 w-full h-full"
         priority
       />
 
       {/* Optional Overlay */}
-      {/* <div className="absolute inset-0 bg-black bg-opacity-20 z-0" /> */}
+      {/* <div className="absolute inset-0 bg-black bg-opacity-20 z-10" /> */}
 
       {/* Centered Content */}
-      <div className="relative z-20 max-w-4xl w-full mx-auto px-4 top-44 border-red-400 shadow-4xl">
-        <div className="bg-white/100 rounded-2xl shadow-2xl p-6 md:p-10 lg:p-8 transform hover:scale-105 transition-all duration-300 text-center">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2">
+      <div className="relative z-20 max-w-4xl w-full mx-auto px-4 py-16 top-36">
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-4 sm:p-6 md:p-10 text-center transform hover:scale-105 transition-all duration-300">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2">
             {bannertitle}
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl text-gray-700 font-medium leading-relaxed">
+          <p className="text-base md:text-xl text-gray-700 font-medium leading-relaxed">
             Renewable Energy for a Sustainable World.
           </p>
         </div>

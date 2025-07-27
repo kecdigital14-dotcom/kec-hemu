@@ -8,7 +8,7 @@ const AboutfifthSection = () => {
       id: 1,
       title: "Bio-CNG Projects",
       description: "Renewable energy from organic waste",
-      image: "/kecservices1.jpg", // This will now show properly
+      image: "/kecservices1.jpg",
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-500"
     },
@@ -16,7 +16,7 @@ const AboutfifthSection = () => {
       id: 2,
       title: "Bio-Diesel Production",
       description: "Sustainable fuel alternatives",
-      image: "/kecservicestwo.jpg", 
+      image: "/kecservicestwo.jpg",
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-500"
     },
@@ -91,39 +91,35 @@ const AboutfifthSection = () => {
   };
 
   return (
-    <div className="max-w-full mx-auto p-8 bg-gray-50 min-h-screen px-36">
-      <div className="text-center mb-16">
-        <div className="flex items-center justify-center gap-2 mb-6">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-12 py-16 bg-gray-50">
+      <div className="text-center mb-12">
+        <div className="flex items-center justify-center gap-2 mb-4">
           <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
             <div className="w-3 h-3 bg-white rounded-full"></div>
           </div>
-          <span className="text-green-600 text-sm font-medium uppercase tracking-wider">
-            OUR SERVICES
+          <span className="text-green-600 text-sm font-semibold uppercase tracking-wider">
+            Our Services
           </span>
         </div>
-
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
           Operation Management By KEC
           <br />
           <span className="text-green-600">Best Leading Services</span>
         </h1>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service) => (
           <div
             key={service.id}
             className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
           >
             <div className="relative h-48 overflow-hidden bg-gray-200">
-              {/* Actual Image */}
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
-
-              {/* Overlay effects and icon */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}
               />

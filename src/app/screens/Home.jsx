@@ -13,7 +13,6 @@ const Home = () => {
     <div>
       <Navbar />
       <Herohome />
-
       <Home2ndsection/>
       <Home3rdsection/>
       <HomecbgProcess/>

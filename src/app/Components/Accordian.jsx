@@ -37,65 +37,57 @@ export default function Accordian() {
   ];
 
   return (
-    <div className="max-w-full mx-auto p-6 bg-gray-50 min-h-screen px-36">
+    <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-36 py-8 bg-gray-50">
       {/* Header */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
           <span className="text-lg font-bold">+</span>
-          SOLAR FAQ
+          HEMU FAQ
         </div>
-        <h1 className="text-4xl font-bold text-gray-900">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
           Frequently Asked Questions
         </h1>
       </div>
 
-      {/* Main Content - Image Left, Accordion Right */}
-      <div className="grid grid-cols-1 lg:flex gap-8 mb-8">
-        {/* Image - Left Side */}
-        <div className="w-full lg:w-1/2 flex-shrink-0">
+      {/* Main Content */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 items-start">
+        {/* Image Section */}
+        <div className="w-full">
           <img
             src="/faq7.jpg"
             alt="Solar Energy Solution"
-            className="w-[80%] h-[480px] mx-auto object-cover rounded-lg shadow-2xl"
+            className="w-full max-w-md mx-auto h-[360px] sm:h-[400px] lg:h-[480px] object-cover rounded-lg shadow-2xl"
           />
         </div>
 
-        {/* Accordion - Right Side */}
-        <div className="w-full lg:w-1/2 space-y-4 flex flex-col">
+        {/* Accordion Section */}
+        <div className="space-y-4">
           {faqData.map((faq) => (
             <div
               key={faq.id}
-              className={`border rounded-lg transition-all duration-300 ${
-                openAccordion === faq.id
+              className={`border rounded-lg transition-all duration-300 ${openAccordion === faq.id
                   ? "border-green-500 bg-green-50"
                   : "border-gray-200 bg-white"
-              }`}
+                }`}
             >
               <button
                 onClick={() => toggleAccordion(faq.id)}
-                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                className="w-full px-4 sm:px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
               >
-                <div className="flex items-center gap-4">
-                  <span className="text-lg font-medium text-gray-900">
-                    {faq.id}.
-                  </span>
-                  <span className="text-lg font-medium text-gray-900">
+                <div className="flex items-center gap-2 sm:gap-4 text-sm sm:text-base">
+                  <span className="font-medium text-gray-900">{faq.id}.</span>
+                  <span className="font-medium text-gray-900">
                     {faq.question}
                   </span>
                 </div>
-                <div className="flex-shrink-0">
-                  {openAccordion === faq.id ? (
-                    <span className="text-xl font-bold text-gray-600">−</span>
-                  ) : (
-                    <span className="text-xl font-bold text-gray-600">+</span>
-                  )}
-                </div>
+                <span className="text-xl font-bold text-gray-600">
+                  {openAccordion === faq.id ? "−" : "+"}
+                </span>
               </button>
-
               {openAccordion === faq.id && (
-                <div className="px-6 pb-4 animate-in slide-in-from-top-2 duration-300">
-                  <div className="pl-8">
-                    <p className="text-gray-700 leading-relaxed text-sm font-normal">
+                <div className="px-4 sm:px-6 pb-4 animate-in slide-in-from-top-2 duration-300">
+                  <div className="pl-6 sm:pl-8">
+                    <p className="text-gray-700 leading-relaxed text-sm font-medium">
                       {faq.answer}
                     </p>
                   </div>
@@ -106,12 +98,12 @@ export default function Accordian() {
         </div>
       </div>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <div className="text-center mt-12">
-        <p className="text-gray-600 mb-4">
-          Still have questions about CBG ?
+        <p className="text-gray-600 mb-4 text-sm sm:text-base">
+          Still have questions about CBG?
         </p>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-medium px-8 py-3 rounded-lg transition-colors">
+        <button className="bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-lg transition">
           Contact Our CBG Experts
         </button>
       </div>
