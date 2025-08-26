@@ -24,19 +24,14 @@ const Home = () => {
     <div>
       <Navbar />
       <Herohome />
-      <Home2ndsection/>
-      <HistoryandImp/>
-      <Homefocusareas/>
-      <Biogasdistri/>
-      <ChallengesFaced/>
-<ObjectivesofHemu/>
-<WhatNext/>
-
-   
-      
-  
-      
-      <Footer/>
+      <Home2ndsection />
+      <HistoryandImp />
+      <Homefocusareas />
+      <Biogasdistri />
+      <ChallengesFaced />
+      <ObjectivesofHemu />
+      <WhatNext />
+      <Footer />
     </div>
   );
 };

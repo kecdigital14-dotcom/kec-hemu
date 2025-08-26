@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 const SimpleImageSlider = () => {
   // Replace with your actual image paths
   const images = [
-    "/herobannerthree.png",
-    "/herobannerthree.png", // Replace with your second image
-    "/herobannerthree.png", // Replace with your third image
-    "/herobannerthree.png", // Replace with your fourth image
+    "/banner1.png",
+    "/banner2.png", // Replace with your second image
+    "/banner3.png", // Replace with your third image
+  
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
