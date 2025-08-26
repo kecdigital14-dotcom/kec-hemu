@@ -3,6 +3,7 @@
 import React from 'react'
 import AboutfirstSection from '../Components/AboutfirstSection'
 import Navbar from '../Components/Navbar'
+import Herohome from "../Components/Herohome";
 import Aboutbanner from '../Components/Aboutbanner'
 import Objectives from '../Components/Objectives'
 import PioneeringPathSection from "../Components/Poineering_Paths"
@@ -20,7 +21,8 @@ const AboutScreen = () => {
   return (
     <div>
       <Navbar/>
-       <Aboutbanner bannertitle="About us"/>
+          <Herohome/>
+       {/* <Aboutbanner bannertitle="About us"/> */}
        <Home2ndsection/>
        <Homefocusareas/>
        <VisionAndMission/>

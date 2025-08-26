@@ -8,7 +8,7 @@ export default function WhatNext() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="/api/placeholder/600/300" 
+              src="/whatnexthemu1.jpg" 
               alt="HEMU biogas facility with storage tanks and processing equipment"
               className="w-full h-64 md:h-80 object-cover"
             />
@@ -18,7 +18,7 @@ export default function WhatNext() {
           </div>
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <img 
-              src="/api/placeholder/600/300" 
+              src="/whatnexthemu2.jpg" 
               alt="Aerial view of HEMU waste processing and renewable energy infrastructure"
               className="w-full h-64 md:h-80 object-cover"
             />

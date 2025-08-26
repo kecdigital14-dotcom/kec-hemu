@@ -20,18 +20,18 @@ const Navbar = () => {
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
               <span className="font-medium">Send Your Mail</span>
-              <span className="text-green-200">ucdfktd@gmail.com</span>
+              <span className="font-medium">ucdfktd@gmail.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
               <span className="font-medium">Phone Number</span>
-              <span className="text-green-200">+91-05946-255867, 255385</span>
+              <span className="font-medium">+91-05946-255867, 255385</span>
             </div>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin className="w-4 h-4" />
             <span className="font-medium">Office Address</span>
-            <span className="text-green-200">UCDF, Mangal Paro, Haldwani, Uttarakhand, 263139</span>
+            <span className="font-medium">UCDF, Mangal Paro, Haldwani, Uttarakhand, 263139</span>
           </div>
         </div>
       </div>

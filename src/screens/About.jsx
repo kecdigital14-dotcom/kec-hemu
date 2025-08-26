@@ -3,6 +3,7 @@
 import React from 'react'
 import AboutfirstSection from '../Components/AboutfirstSection'
 import Navbar from '../Components/Navbar'
+import Herohome from "../Components/Herohome";
 import Aboutbanner from '../Components/Aboutbanner'
 import Abouttestimonials from '../Components/Abouttestimonials'
 import Objectives from '../Components/Objectives'
@@ -16,7 +17,8 @@ const AboutScreen = () => {
   return (
     <div>
       <Navbar/>
-       <Aboutbanner bannertitle="About us"/>
+       {/* <Aboutbanner bannertitle="About us"/> */}
+       <Herohome/>
       <AboutfirstSection/>
       <Objectives/>
       <PioneeringPathSection/>
