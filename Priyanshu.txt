@@ -1,0 +1,5 @@
+bg-gradient-to-r from-[#205D34] to-[#FFD700]
+bg-gradient-to-b from-[#205D34] to-[#FFD700]
+bg-gradient-to-tr from-[#205D34] via-[#FFD700] to-[#205D34]
+
+#205D34

@@ -1,146 +1,122 @@
-import React from "react";
+import React from 'react';
 
-export default function Home2ndsection() {
+const Home2ndsection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Images Grid */}
-          <div className="grid grid-cols-2 gap-6">
-            {/* Main Large Image */}
-            <div className="col-span-2 sm:col-span-1 row-span-2">
-              <div className="relative rounded-2xl overflow-hidden h-full min-h-[300px]">
-                <img
-                  src="home2.jpg"
-                  alt="Solar house with renewable energy systems"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-lg">CBG for Industries</h3>
-                  <p className="text-sm opacity-90">
-                    Reliable fuel for boilers, kilns & generators
+    <div className="bg-gradient-to-br from-green-50 via-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center px-6 py-3 bg-green-100 border border-green-200 rounded-full mb-6">
+            <span className="text-green-800 text-sm font-semibold" style={{color: '#205D34'}}>🤝 STRATEGIC PARTNERSHIP</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
+            ABOUT <span style={{color: '#205D34'}}>US</span>
+          </h1>
+          <div className="w-32 h-1 mx-auto mb-4" style={{backgroundColor: '#205D34'}}></div>
+          <p className=" font-semibold text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            HEMU is an integrated rural development initiative established through a strategic Joint Venture between UCDF and KEC Agritech
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+          {/* Left Column - Partnership Overview */}
+          <div className="space-y-8">
+            {/* Main Partnership Card */}
+            <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+              <div className="flex items-center mb-6">
+                <div className="w-4 h-4 rounded-full mr-4" style={{backgroundColor: '#205D34'}}></div>
+                <h2 className="text-2xl font-bold text-gray-900">Joint Venture Partners</h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border-l-4" style={{borderLeftColor: '#205D34'}}>
+                  <h3 className="text-lg font-bold mb-2" style={{color: '#205D34'}}>UTTARAKHAND COOPERATIVE DAIRY FEDERATION (UCDF)</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Leading cooperative organization focused on enhancing farmer income and strengthening dairy infrastructure across Uttarakhand.
+                  </p>
+                </div>
+                
+                <div className="p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border-l-4 border-green-600">
+                  <h3 className="text-lg font-bold text-green-900 mb-2">KEC AGRITECH PVT. LTD.</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Established in 2020, specializing in Project Management Consultancy, EPC, and renewable energy solutions.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Wind Farm Image */}
-            <div className="col-span-1">
-              <div className="relative rounded-2xl overflow-hidden h-full min-h-[150px]">
-                <img
-                  src="homesecondsecfour.jpg"
-                  alt="Wind farm with solar panels"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-sm sm:text-base">
-                    Agro-Waste to Energy
-                  </h3>
-                  <p className="text-xs opacity-90">
-                    Turning agricultural waste into clean fuel
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Solar Panel Image */}
-            <div className="col-span-1">
-              <div className="relative rounded-2xl overflow-hidden h-full min-h-[150px]">
-                <img
-                  src="homesecondsectionthree.jpg"
-                  alt="Solar panel installation"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-sm sm:text-base">
-                    Decentralized Energy Plants
-                  </h3>
-                  <p className="text-xs opacity-90">
-                    Smart, localized biogas production systems
-                  </p>
-                </div>
-              </div>
+            {/* Mission Statement */}
+            <div className="rounded-3xl shadow-2xl p-8 text-white" style={{background: `linear-gradient(135deg, #205D34 0%, #1a4f2b 100%)`}}>
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <span className="bg-white rounded-full w-10 h-10 flex items-center justify-center text-lg mr-4" style={{color: '#205D34'}}>🎯</span>
+                Our Mission
+              </h3>
+              <p className="text-green-100 leading-relaxed">
+                To enhance income and employment opportunities for farmers, promote commercial dairy farming, 
+                and strengthen the cooperative structure while connecting farmers with corporate entities for 
+                sustainable rural development.
+              </p>
             </div>
           </div>
 
-          {/* Right Side - Content */}
+          {/* Right Column - Company Logos */}
           <div className="space-y-8">
-            <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
-              <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-              ABOUT US
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Pioneering the Future of
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 block">
-                Renewable Energy
-              </span>
-            </h1>
-
-            <p className="text-gray-600 leading-relaxed text-justify text-base font-medium">
-              We are proud to be a trusted name in Compressed Bio Gas solutions, converting organic and agro waste into clean energy. Our mission is to make sustainable fuel accessible and affordable for industries, transport, and rural development.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="flex items-center space-x-4">
-                <div className="relative">
-                  <div className="w-16 h-16 rounded-full border-4 border-green-500 flex items-center justify-center">
-                    <span className="text-xl font-bold text-green-600">90%</span>
+            <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Partner Organizations</h3>
+              
+              <div className="space-y-6">
+                {/* UCDF Logo */}
+                <div className="group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="h-36 flex items-center justify-center">
+                      <img
+                        src="/ucdflogo.avif"
+                        alt="UCDF Logo"
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
                   </div>
-                  <div
-                    className="absolute inset-0 rounded-full border-4 border-green-500 transform rotate-45"
-                    style={{
-                      background: `conic-gradient(#10b981 0deg, #10b981 ${90 * 3.6}deg, #e5e7eb ${90 * 3.6}deg, #e5e7eb 360deg)`,
-                    }}
-                  ></div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Building Tomorrow</h3>
-                  <p className="text-sm text-gray-600">Clean energy from waste</p>
-                </div>
-              </div>
 
-              <div className="flex items-center space-x-4">
-                <div className="relative">
-                  <div className="w-16 h-16 rounded-full border-4 border-green-500 flex items-center justify-center">
-                    <span className="text-xl font-bold text-green-600">85%</span>
+                {/* HEMU Logo */}
+                <div className="group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="h-36 flex items-center justify-center">
+                      <img
+                        src="/logoheader.png"
+                        alt="HEMU Logo"
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                    {/* <div className="mt-4 text-center">
+                      <h4 className="font-semibold" style={{color: '#205D34'}}>HEMU</h4>
+                      <p className="text-sm text-gray-600">Joint Venture</p>
+                    </div> */}
                   </div>
-                  <div
-                    className="absolute inset-0 rounded-full border-4 border-green-500 transform rotate-45"
-                    style={{
-                      background: `conic-gradient(#10b981 0deg, #10b981 ${85 * 3.6}deg, #e5e7eb ${85 * 3.6}deg, #e5e7eb 360deg)`,
-                    }}
-                  ></div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Leading the Bio Gas Movement</h3>
-                  <p className="text-sm text-gray-600">Fueling change across India</p>
+
+                {/* KEC Logo */}
+                <div className="group hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-green-50 to-green-100  rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="h-36 flex items-center justify-center">
+                      <img
+                        src="/keclogo.png"
+                        alt="KEC Logo"
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <button className="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              Learn More
-              <svg
-                className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </button>
           </div>
         </div>
-      </main>
+
+       
+       
+      </div>
     </div>
   );
-}
+};
+
+export default Home2ndsection;

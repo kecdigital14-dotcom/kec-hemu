@@ -2,84 +2,207 @@ import React from 'react';
 
 const Home3rdSection = () => {
   return (
-    <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl w-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-          {/* Left Content */}
-          <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-green-100 border border-green-200 rounded-full">
-              <span className="text-green-600 text-sm font-medium">+ WHY CHOOSE US</span>
-            </div>
-
-            {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Making the Switch to Bio Gas Easy and Affordable
-            </h2>
-
-            {/* Paragraph */}
-            <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-medium">
-              At HEMU, we are your trusted partner in Compressed Bio Gas solutions, known for our innovation, waste-to-energy expertise, and commitment to sustainability and client success.
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-6">
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-blue-900 mb-1">1500+</div>
-                <div className="text-gray-600 text-sm">CBG Projects Commissioned</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-blue-900 mb-1">750+</div>
-                <div className="text-gray-600 text-sm">Happy Clients Across India</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-blue-900 mb-1">98%</div>
-                <div className="text-gray-600 text-sm">Customer Satisfaction Rate</div>
-              </div>
-            </div>
-
-            {/* Button */}
-            <div className="flex justify-center sm:justify-start">
-              <button className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition">
-                Learn More
-                <span className="ml-2 text-xl">→</span>
-              </button>
-            </div>
+    <div className=" py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl w-full mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-6 py-3 bg-blue-100 border border-blue-200 rounded-full mb-6">
+            <span className="text-blue-800 text-sm font-semibold">🍞 BAKERY UNITS PROGRAM</span>
           </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-700 leading-tight mb-4">
+            BAKERY UNITS
+          </h1>
+          <p className="text-lg font-semibold text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            HEMU promotes decentralized food processing by establishing bakery units in rural areas. 
+            These units utilize locally available agricultural inputs and dairy products to create 
+            nutritional food products and drive village-level entrepreneurship.
+          </p>
+        </div>
 
-          {/* Right Content */}
-          <div className="relative">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Left Content - Image, Key Offerings, and Setup & Training */}
+          <div className="space-y-8">
+            {/* Main Image */}
+            <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
+              <img
+                src="/bakerynew1.jpg"
+                alt="HEMU Bakery Unit Production"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute top-4 left-4 bg-[#205D34] text-white px-4 py-2 rounded-full">
+                <span className="font-semibold">Village-Level Enterprise</span>
+              </div>
+            </div>
 
-              {/* Badge */}
-              <div className="sm:col-span-2 flex sm:justify-end justify-center mb-4">
-                <div className="bg-green-500 text-white px-6 py-4 rounded-2xl shadow-lg text-center">
-                  <div className="text-3xl font-bold">25+</div>
-                  <div className="text-sm">Years of Experience</div>
+            {/* Key Offerings */}
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <span className="bg-[#205D34] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">✓</span>
+                Key Offerings
+              </h3>
+              <div className="space-y-2">
+                <div className="flex items-start space-x-3">
+                  <div className="bg-blue-100 rounded-full p-2 mt-1">
+                    <div className="w-2 h-2 bg-[#205D34] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-700">Village-level micro bakery franchises</h4>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-blue-100 rounded-full p-2 mt-1">
+                    <div className="w-2 h-2 bg-[#205D34] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-700">Training for women and SHG-led enterprises</h4>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-blue-100 rounded-full p-2 mt-1">
+                    <div className="w-2 h-2 bg-[#205D34] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-700">Institutional sales to schools, hostels, and local markets</h4>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-blue-100 rounded-full p-2 mt-1">
+                    <div className="w-2 h-2 bg-[#205D34] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-700">Branding and marketing support under HEMU label</h4>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              {/* Image 1 */}
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <img
-                  src="/home3rdsectionone.jpg"
-                  alt="Solar panel installation"
-                  className="w-full h-64 sm:h-80 object-cover"
-                />
-              </div>
-
-              {/* Image 2 */}
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <img
-                  src="/home3rdsectiontwo.jpg"
-                  alt="Solar energy professional"
-                  className="w-full h-64 sm:h-80 object-cover"
-                />
+            {/* Setup & Training */}
+            <div className="bg-[#205D34] rounded-2xl shadow-xl text-white p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <span className="bg-white text-blue-900 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">1</span>
+                Setup & Training
+              </h3>
+              <div className="space-y-4 text-blue-50">
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Activity:</p>
+                    <p className="text-sm">Identification of locations and selection of women/SHG entrepreneurs</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Support Provided:</p>
+                    <p className="text-sm">Infrastructure setup (ovens, utensils), raw material supply (flour, dairy, etc.)</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Outcome:</p>
+                    <p className="text-sm">Equipped bakery unit with trained operators</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
+          {/* Right Content - Process Flow */}
+          <div className="space-y-8">
+            {/* Production */}
+            <div className="bg-[#205D34] rounded-2xl shadow-xl text-white p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <span className="bg-white text-blue-900 rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">2</span>
+                Production
+              </h3>
+              <div className="space-y-4 text-blue-50">
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Activity:</p>
+                    <p className="text-sm">Daily production of baked goods such as buns, biscuits, rusk, and cakes</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Support Provided:</p>
+                    <p className="text-sm">Standardized recipes, quality control practices</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Outcome:</p>
+                    <p className="text-sm">Nutritional, consistent, and affordable bakery products</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Branding & Packaging */}
+            <div className="bg-white rounded-2xl shadow-xl text-black p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <span className="bg-[#205D34] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">3</span>
+                Branding & Packaging
+              </h3>
+              <div className="space-y-4 text-gray-900">
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-bold">Activity:</p>
+                    <p className="text-sm">Local branding under the HEMU label and eco-friendly packaging</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-bold">Support Provided:</p>
+                    <p className="text-sm">Marketing templates, labeling tools, design guidance</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-bold">Outcome:</p>
+                    <p className="text-sm">Professionally packaged, recognizable rural bakery products</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Sales & Distribution */}
+            <div className="bg-[#205D34] rounded-2xl shadow-xl text-white p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <span className="bg-white text-[#205D34] rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3 font-bold">4</span>
+                Sales & Distribution
+              </h3>
+              <div className="space-y-4 text-">
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Activity:</p>
+                    <p className="text-sm">Supplying products to schools, hostels, local stores, and rural markets</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Support Provided:</p>
+                    <p className="text-sm">Institutional linkages, sales training, order fulfillment systems</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="text-blue-200 font-bold">•</span>
+                  <div>
+                    <p className="font-medium">Outcome:</p>
+                    <p className="text-sm">Sustained income for micro-enterprises and improved rural nutrition</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

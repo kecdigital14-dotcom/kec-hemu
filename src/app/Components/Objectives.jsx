@@ -11,14 +11,14 @@ export default function Objectives() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl">
               <img 
-                src="/objectivesone.jpeg" 
+                src="/ourobjectiveabout.jpg" 
                 alt="Green tractor working in agricultural field during sunset"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[550px] object-cover"
               />
               
               {/* Trust Badge Overlay */}
-              <div className="absolute bottom-8 left-8 bg-green-800 bg-opacity-95 text-white p-6 rounded-2xl backdrop-blur-sm">
-                <div className="flex items-center mb-4">
+              <div className="absolute -bottom-16 left-80 bg-green-800 bg-opacity-95 text-white p-6 rounded-2xl backdrop-blur-sm">
+                <div className="flex items-center mb-2">
                   <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
                     <svg className="w-5 h-5 text-green-800" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -27,7 +27,7 @@ export default function Objectives() {
                   <h3 className="text-2xl font-bold">100% Trusted!</h3>
                 </div>
                 
-                <div className="space-y-3">
+                <div className="space-y-1">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3 flex-shrink-0"></div>
                     <span className="text-sm">Tractor and harvester rental farming</span>
