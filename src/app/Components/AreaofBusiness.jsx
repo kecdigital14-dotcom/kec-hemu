@@ -49,9 +49,77 @@ const AreaofBusiness = () => {
       icon: "🌱",
       color: "from-yellow-500 to-yellow-400",
       features: ["Organic fertilizers", "Livestock inputs", "Soil enhancement", "Sustainable farming"],
-      category: "Agricultural Inputs"
+      category: "Compressed Bio Gas"
+    },
+    {
+      title: "Bottling Plant Operations",
+      description: "Modern bottling facilities for various liquid products with quality standards.",
+      icon: "🏭",
+      color: "from-green-700 to-green-600",
+      features: ["Automated bottling", "Quality control", "Packaging solutions", "Distribution ready"],
+      category: "Bottling Plant"
+    },
+    {
+      title: "Bakery Production Units",
+      description: "Commercial bakery operations providing fresh baked goods and employment opportunities.",
+      icon: "🍞",
+      color: "from-yellow-500 to-yellow-400",
+      features: ["Fresh bakery products", "Local employment", "Quality ingredients", "Market distribution"],
+      category: "Bakery Units"
     }
   ];
+
+  // Enhanced category data with images and descriptions
+  const categoryData = {
+    "Agricultural Processing": {
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=250&fit=crop",
+      description: "Modern agricultural processing facilities that transform raw farm produce into value-added products, supporting local farmers and rural economy.",
+      icon: "🌾",
+      stats: "Processing 500+ tons monthly"
+    },
+    "Food & Beverage": {
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
+      description: "Quality food and beverage production ensuring food security while creating sustainable income opportunities for rural communities.",
+      icon: "🥛",
+      stats: "Serving 1000+ families daily"
+    },
+    "Energy Solutions": {
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=250&fit=crop",
+      description: "Clean and renewable energy solutions including biogas and biofuel production for sustainable power generation and reduced carbon footprint.",
+      icon: "⚡",
+      stats: "Reducing 200 tons CO2 annually"
+    },
+    "Environmental Services": {
+      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop",
+      description: "Comprehensive environmental solutions focusing on carbon credit projects, climate resilience, and sustainable waste management practices.",
+      icon: "🌍",
+      stats: "1M+ carbon credits generated"
+    },
+    "Waste Management": {
+      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=250&fit=crop",
+      description: "Innovative waste processing solutions converting agricultural and organic waste into valuable resources like compost and biofuel.",
+      icon: "♻️",
+      stats: "Processing 100+ tons waste/month"
+    },
+    "Compressed Bio Gas": {
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=250&fit=crop",
+      description: "State-of-the-art compressed biogas production from organic waste, providing clean cooking fuel and reducing environmental pollution.",
+      icon: "🔥",
+      stats: "Producing 50,000 m³ gas/month"
+    },
+    "Bottling Plant": {
+      image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=250&fit=crop",
+      description: "Modern automated bottling facilities ensuring hygienic packaging of various liquid products with international quality standards.",
+      icon: "🏭",
+      stats: "50,000 bottles per day capacity"
+    },
+    "Bakery Units": {
+      image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=250&fit=crop",
+      description: "Commercial bakery operations producing fresh, quality baked goods while creating employment opportunities in rural areas.",
+      icon: "🍞",
+      stats: "Employing 100+ local workers"
+    }
+  };
 
   const categories = [...new Set(businessAreas.map(area => area.category))];
 
@@ -131,51 +199,76 @@ const AreaofBusiness = () => {
           </div>
         </div>
 
-        {/* Categories Overview */}
+        {/* Enhanced Categories Overview - 4 in a row */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-12 border border-gray-100">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Business Categories</h2>
-            <p className="text-gray-600">Our diverse portfolio spans multiple sectors for comprehensive rural development</p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Business Categories</h2>
+            <p className="text-gray-600 text-lg">Our diverse portfolio spans multiple sectors for comprehensive rural development</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category, index) => {
-              const categoryCount = businessAreas.filter(area => area.category === category).length;
-              const isEven = index % 2 === 0;
-              
-              return (
-                <div key={index} className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-100">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${isEven ? 'from-green-700 to-green-600' : 'from-yellow-500 to-yellow-400'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-2xl text-white font-bold">{categoryCount}</span>
-                  </div>
-                  <h3 className="font-bold text-gray-800 text-lg mb-2">{category}</h3>
-                  <p className="text-gray-600 text-sm">
-                    {categoryCount} business {categoryCount === 1 ? 'area' : 'areas'}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Mission Statement */}
-        <div className="bg-gradient-to-r from-green-50 to-yellow-50 rounded-2xl p-8 mb-12 border border-gray-100">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-700 to-yellow-400 rounded-2xl flex items-center justify-center mr-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+          {/* Categories in rows of 4 */}
+          <div className="space-y-8">
+            {Array.from({ length: Math.ceil(categories.length / 4) }, (_, rowIndex) => (
+              <div key={rowIndex} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {categories.slice(rowIndex * 4, (rowIndex + 1) * 4).map((category, index) => {
+                  const categoryCount = businessAreas.filter(area => area.category === category).length;
+                  const categoryInfo = categoryData[category];
+                  const isEven = index % 2 === 0;
+                  
+                  return (
+                    <div key={index} className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                      {/* Category Image */}
+                      <div className="relative h-48 overflow-hidden">
+                        <img 
+                          src={categoryInfo.image} 
+                          alt={category}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                        
+                        {/* Icon Overlay */}
+                        <div className="absolute top-4 right-4">
+                          <div className={`w-12 h-12 bg-gradient-to-r ${isEven ? 'from-green-700 to-green-600' : 'from-yellow-500 to-yellow-400'} rounded-xl flex items-center justify-center shadow-lg`}>
+                            <span className="text-xl">{categoryInfo.icon}</span>
+                          </div>
+                        </div>
+                        
+                        {/* Count Badge */}
+                        <div className="absolute bottom-4 left-4">
+                          <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-full px-3 py-1">
+                            <span className="text-gray-800 font-bold text-sm">{categoryCount} Area{categoryCount > 1 ? 's' : ''}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="p-6">
+                        <h3 className="font-bold text-gray-800 text-lg mb-3 line-clamp-2">{category}</h3>
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{categoryInfo.description}</p>
+                        
+                        {/* Stats */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center text-xs text-gray-500">
+                            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            {categoryInfo.stats}
+                          </div>
+                          
+                          {/* Learn More Button */}
+                          <button className="text-xs font-semibold text-green-700 hover:text-green-800 transition-colors">
+                            Learn More →
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-              <h2 className="text-3xl font-bold text-gray-800">Our Mission</h2>
-            </div>
-            
-            <p className="text-lg text-gray-700 leading-relaxed">
-              <strong className="text-green-700">Sustainable farming</strong> ensures long-term productivity while preserving the environment, supporting communities, and promoting <strong className="text-yellow-600">economic viability</strong> for future generations. Our comprehensive approach integrates multiple business areas to create a robust ecosystem that benefits rural communities across Uttarakhand.
-            </p>
+            ))}
           </div>
         </div>
-
+        
         {/* Impact Metrics */}
         <div className="bg-white rounded-2xl shadow-2xl p-8 mb-12 border border-gray-100">
           <div className="text-center mb-8">
@@ -185,7 +278,7 @@ const AreaofBusiness = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { number: "6", label: "Business Areas", icon: "🏢", color: "from-green-700 to-green-600" },
+              { number: "8", label: "Business Areas", icon: "🏢", color: "from-green-700 to-green-600" },
               { number: "100%", label: "Sustainable Focus", icon: "🌿", color: "from-yellow-500 to-yellow-400" },
               { number: "360°", label: "Circular Economy", icon: "♻️", color: "from-green-700 to-green-600" },
               { number: "Rural", label: "Community Impact", icon: "🏘️", color: "from-yellow-500 to-yellow-400" }

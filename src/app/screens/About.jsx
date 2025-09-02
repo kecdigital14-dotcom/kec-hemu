@@ -24,8 +24,9 @@ const AboutScreen = () => {
           <Herohome/>
        {/* <Aboutbanner bannertitle="About us"/> */}
        <Home2ndsection/>
+         <VisionAndMission/>
        <Homefocusareas/>
-       <VisionAndMission/>
+     
   
       <Objectives/>
       <Initiative/>

@@ -28,7 +28,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className='text-md text-green-700'>Renewable, Biofuel Energy Generation, Carbon credit</strong> - Development of 
+                    <strong className='text-md text-gray-600'>Renewable, Biofuel Energy Generation, Carbon credit</strong> - Development of 
                     decentralized energy infrastructure, including biogas and solar power, to reduce rural 
                     dependency on fossil fuels.
                   </p>
@@ -40,7 +40,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-yellow-600">Agricultural Waste Processing, Agri - Inputs (All type of Seeds, Pesticides, 
+                    <strong className="text-gray-600">Agricultural Waste Processing, Agri - Inputs (All type of Seeds, Pesticides, 
                     Fertilizer), Contract farming</strong> - Conversion of cattle waste and farm residues into 
                     bio-energy, compost, and organic manure to support a circular rural economy.
                   </p>
@@ -52,7 +52,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-green-700">Dairy, Bakery & Cafeteria & Food Micro-Enterprises & other Agri allied 
+                    <strong className="text-gray-600">Dairy, Bakery & Cafeteria & Food Micro-Enterprises & other Agri allied 
                     business</strong> - Support for rural dairy operations and bakery units that enhance local 
                     income generation and value addition in the food supply chain.
                   </p>
@@ -64,7 +64,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-yellow-600">Animal husbandry related business, Cattle feed, Mineral water</strong>
+                    <strong className="text-gray-600">Animal husbandry related business, Cattle feed, Mineral water</strong>
                   </p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-green-700">Skill Development & FTP, Rural Capacity Building</strong>
+                    <strong className="text-gray-600">Skill Development & FTP, Rural Capacity Building</strong>
                   </p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-yellow-600">FMCG & FMCD trading or Contract Mfg. Cowdung paints, Mosquito nets</strong>
+                    <strong className="text-gray-600">FMCG & FMCD trading or Contract Mfg. Cowdung paints, Mosquito nets</strong>
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-green-700">Tourism</strong>
+                    <strong className="text-gray-600">Tourism</strong>
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-yellow-600">Allied business</strong>
+                    <strong className="text-gray-600">Allied business</strong>
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-green-700">Services EPC, PMC, O & M, Trading, Supply, Manufacturing or Contract 
+                    <strong className="text-gray-600">Services EPC, PMC, O & M, Trading, Supply, Manufacturing or Contract 
                     manufacturing, procurement, All type turnkey installation services of above 
                     products</strong>
                   </p>
@@ -183,10 +183,10 @@ const Homefocusareas = () => {
       </div>
 
        {/* UCDF Objectives Section */}
-        <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100">
+        <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100 mt-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">UCDF Strategic Objectives</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">HEMU Strategic Objectives</h2>
+            <p className="text-gray-700 max-w-2xl mx-auto ">
               Our comprehensive approach to rural development and farmer empowerment
             </p>
           </div>

@@ -74,10 +74,10 @@ const ObjectivesofHemu = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Title and Vision */}
               <div>
-                <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-                  <span className="text-white font-semibold text-sm">STRATEGIC VISION</span>
+                <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-2">
+                  <span className="text-gray-700 font-semibold text-sm">STRATEGIC VISION</span>
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-white mb-2 leading-tight">
                   STRATEGIC<br />
                   <span className="text-yellow-200">OBJECTIVES</span><br />
                   <span className="text-3xl md:text-4xl">OF HEMU</span>

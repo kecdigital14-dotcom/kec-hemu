@@ -41,9 +41,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <div className="flex w-56 relative">
-              <img src="/logoheader.png" alt="" className="h-auto w-auto object-contain" />
-              <span className="text-2xl font-bold text-yellow-500 absolute top-4 left-[160px]">HEMU</span>
+            <div className="flex ">
+              <img src="/hemufooterlogo.png" alt="" className="h-16  object-contain" />
+              {/* <span className="text-2xl font-bold text-yellow-500 absolute top-4 left-[160px]">HEMU</span> */}
             </div>
 
             {/* Desktop Navigation */}

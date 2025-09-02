@@ -18,15 +18,16 @@ import TechnologicalInnovations from "../Components/TechnologicalInnovations";
 import AreaofBusiness from "../Components/AreaofBusiness";
 import ObjectivesofHemu from "../Components/ObjectivesofHemu";
 import WhatNext from "../Components/WhatNext";
+import HemuJoint from "../Components/HemuJoint";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Herohome />
-      <Home2ndsection />
-      <HistoryandImp />
-      <Homefocusareas />
+      <HemuJoint/>
+      {/* <HistoryandImp /> */}
+      {/* <Homefocusareas /> */}
       <Biogasdistri />
       <ChallengesFaced />
       <ObjectivesofHemu />

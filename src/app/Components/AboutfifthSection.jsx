@@ -102,7 +102,7 @@ const AboutfifthSection = () => {
           </span>
         </div>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-          Operation Management By KEC
+          Operation Management By HEMU
           <br />
           <span className="text-green-600">Best Leading Services</span>
         </h1>
