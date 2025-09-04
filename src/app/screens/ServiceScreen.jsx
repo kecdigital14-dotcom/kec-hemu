@@ -14,7 +14,7 @@ const ServiceScreen = () => {
     <div>
         <Navbar/>
         <Aboutbanner bannertitle="About us" 
-                        bannerImage="/Servicepagebanner.png" 
+                        bannerImage="/Servicepagebanne.jpeg" 
                        />
         <HemuServices/>
         <AreaofBusiness/>

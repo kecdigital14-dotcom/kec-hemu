@@ -10,7 +10,7 @@ const Contact = () => {
     <div>
       <Navbar />
      <Aboutbanner bannertitle="About us" 
-                bannerImage="/Contactuspagebanner.png" 
+                bannerImage="/Contactuspagebanne.jpeg" 
                />
    <ContactInfo />
       <Footer/>

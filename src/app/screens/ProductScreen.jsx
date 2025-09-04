@@ -11,7 +11,7 @@ const ServiceScreen = () => {
     <div>
       <Navbar />
       <Aboutbanner bannertitle="About us"
-        bannerImage="/Shopnowpagebanner.png"
+        bannerImage="/Shopnowpagebanne.jpeg"
       />
       <ProductList />
       <Footer />

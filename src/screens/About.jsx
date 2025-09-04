@@ -18,7 +18,7 @@ const AboutScreen = () => {
     <div>
       <Navbar/>
        <Aboutbanner bannertitle="About us" 
-        bannerImage="/Aboutusbanner.png" 
+        bannerImage="/Aboutusbanne.jpeg" 
        />
        {/* <Herohome/> */}
       <AboutfirstSection/>
