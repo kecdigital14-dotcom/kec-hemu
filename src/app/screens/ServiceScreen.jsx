@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import HemuServices from '../Components/HemuServices'
 import Herohome from "../Components/Herohome";
+import Aboutbanner from '../Components/Aboutbanner'
 import Footer from '../Components/Footer'
 import DairyDevelopment from '../Components/DairyDevelopment';
 import Home3rdSection from '../Components/Home3rdsection';
@@ -12,7 +13,9 @@ const ServiceScreen = () => {
   return (
     <div>
         <Navbar/>
-         <Herohome/>
+        <Aboutbanner bannertitle="About us" 
+                        bannerImage="/Servicepagebanner.png" 
+                       />
         <HemuServices/>
         <AreaofBusiness/>
         <DairyDevelopment/>

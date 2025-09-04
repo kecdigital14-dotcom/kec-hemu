@@ -21,8 +21,8 @@ const AboutScreen = () => {
   return (
     <div>
       <Navbar/>
-          <Herohome/>
-       {/* <Aboutbanner bannertitle="About us"/> */}
+          {/* <Herohome/> */}
+       <Aboutbanner />
        <Home2ndsection/>
          <VisionAndMission/>
        <Homefocusareas/>

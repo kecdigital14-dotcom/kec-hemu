@@ -17,8 +17,10 @@ const AboutScreen = () => {
   return (
     <div>
       <Navbar/>
-       {/* <Aboutbanner bannertitle="About us"/> */}
-       <Herohome/>
+       <Aboutbanner bannertitle="About us" 
+        bannerImage="/Aboutusbanner.png" 
+       />
+       {/* <Herohome/> */}
       <AboutfirstSection/>
       <Objectives/>
       <PioneeringPathSection/>

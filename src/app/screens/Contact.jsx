@@ -9,8 +9,9 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <Herohome/>
-      {/* <Aboutbanner bannertitle= "Contact us"/> */}
+     <Aboutbanner bannertitle="About us" 
+                bannerImage="/Contactuspagebanner.png" 
+               />
    <ContactInfo />
       <Footer/>
     </div>
