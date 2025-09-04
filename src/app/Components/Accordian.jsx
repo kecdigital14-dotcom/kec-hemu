@@ -10,30 +10,44 @@ export default function Accordian() {
   };
 
   const faqData = [
-    {
-      id: 1,
-      question: " How do I know if CBG is right for my business or farm?",
-      answer:
-        "Compressed Bio Gas is ideal for industries, transport fleets, and even rural areas with agro-waste availability. If you generate organic waste (like agri residue, cow dung, food waste), CBG can turn it into valuable fuel. Our experts can evaluate your location and guide you on feasibility, ROI, and plant setup.",
-    },
-    {
-      id: 2,
-      question: "Can CBG be used during the monsoon or in humid climates?",
-      answer:
-        "Yes. CBG plants are designed to operate year-round, including in rainy or humid weather. While feedstock handling may require slight adjustments, gas production remains stable with proper process control and covered storage.",
-    },
-    {
-      id: 3,
-      question: " Can I become energy independent with a CBG plant?",
-      answer:
-        "Absolutely. A well-designed CBG plant can help industries, transport depots, or farms reduce dependence on fossil fuels, LPG, or diesel. It also supports grid-independence when paired with biogas-powered generators or microgrids.",
-    },
-    {
-      id: 4,
-      question: "What happens if there's a technical fault or gas production drops?",
-      answer:
-        "Our systems are built with monitoring tools to track performance. In case of issues like feedstock inconsistency or pressure drops, automatic alerts are triggered. Our technical team offers both remote support and on-ground maintenance to ensure continuous operation.",
-    },
+  {
+  id: 1,
+  question: "Is CBG suitable for my farm or business?",
+  answer:
+    "Yes. Farms and businesses generating organic waste (crop residue, cow dung, food waste) can convert it into clean energy and additional income. HEMU experts guide you on feasibility, ROI, and plant setup.",
+},
+{
+  id: 2,
+  question: "Can I achieve energy independence with a CBG plant?",
+  answer:
+    "Absolutely. Properly sized plants can meet your energy needs, reduce reliance on conventional fuels, and provide surplus energy for local use.",
+},
+{
+  id: 3,
+  question: "How does HEMU support dairy farmers?",
+  answer:
+    "Through UCDF’s cooperative network, we provide milk collection, quality testing, processing, and bottling, ensuring better income and farm-to-consumer quality.",
+},
+{
+  id: 4,
+  question: "Does HEMU provide fertiliser solutions?",
+  answer:
+    "Yes. By-products from dairy and CBG operations are converted into organic fertiliser, enriching soil and promoting sustainable farming practices.",
+},
+{
+  id: 5,
+  question: "What support is available for rural entrepreneurship (e.g., bakery)?",
+  answer:
+    "HEMU offers training, small-scale bakery setups, and integration of renewable energy, enabling farmers and rural entrepreneurs to generate additional income.",
+},
+{
+  id: 6,
+  question: "What technical and operational support does HEMU provide?",
+  answer:
+    "We provide 24/7 consultation and monitoring across CBG, dairy, fertiliser, and bakery operations, ensuring consistent performance and sustainability.",
+},
+
+
   ];
 
   return (

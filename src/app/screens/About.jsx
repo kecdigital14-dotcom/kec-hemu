@@ -35,7 +35,7 @@ const AboutScreen = () => {
       {/* <OperationKec/> */}
   
       <Dairy/>
-           <Accordian/>
+           {/* <Accordian/> */}
       {/* <Abouttestimonials/> */}
       <Footer/>
     </div>

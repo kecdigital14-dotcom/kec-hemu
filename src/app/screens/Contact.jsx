@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import ContactInfo from '../Components/ContactInfo'
 import Footer from "../Components/Footer";
 import Herohome from "../Components/Herohome";
+import Accordian from '../Components/Accordian';
 import Aboutbanner from "../Components/Aboutbanner";
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
                 bannerImage="/Contactuspagebanne.jpeg" 
                />
    <ContactInfo />
+   <Accordian/>
       <Footer/>
     </div>
   );

@@ -116,9 +116,9 @@ const Home2ndsection = () => {
                   <div className="inline-flex items-center px-8 py-4 rounded-full mb-6" style={{backgroundColor: '#205D34'}}>
                     <span className="text-white text-sm font-bold tracking-wider">✨ JOINT VENTURE RESULT</span>
                   </div>
-                  <div className="h-32 flex mb-6 mx-auto">
+                  <div className="h-32 flex mb-6 mx-auto items-center ">
                     <img
-                      src="/logoheader.png"
+                       src="/hemufooterlogo.png"
                       alt="HEMU Logo"
                       className="max-h-full max-w-full object-contain"
                     />
@@ -143,32 +143,7 @@ const Home2ndsection = () => {
           </div>
         </div>
 
-        {/* Mission & Vision */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="rounded-3xl shadow-2xl p-8 text-white" style={{background: `linear-gradient(135deg, #205D34 0%, #1a4f2b 100%)`}}>
-            <h3 className="text-2xl font-bold mb-6 flex items-center">
-              <span className="bg-white rounded-full w-12 h-12 flex items-center justify-center text-2xl mr-4" style={{color: '#205D34'}}>🎯</span>
-              Our Mission
-            </h3>
-            <p className="text-green-100 leading-relaxed text-lg">
-              To enhance income and employment opportunities for farmers, promote commercial dairy farming, 
-              and strengthen the cooperative structure while connecting farmers with corporate entities for 
-              sustainable rural development.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
-            <h3 className="text-2xl font-bold mb-6 flex items-center" style={{color: '#205D34'}}>
-              <span className="rounded-full w-12 h-12 flex items-center justify-center text-2xl mr-4" style={{backgroundColor: '#205D34', color: 'white'}}>🌱</span>
-              Our Vision
-            </h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              To become the leading catalyst for rural transformation by bridging traditional cooperative 
-              wisdom with modern agricultural technology, creating sustainable prosperity for farming 
-              communities across India.
-            </p>
-          </div>
-        </div>
+     
 
         {/* Combined Strengths */}
         <div className="mt-16">

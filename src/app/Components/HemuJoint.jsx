@@ -27,11 +27,11 @@ const HemuJoint = () => {
                 <div className="text-center mb-8">
                     {/* Hemu Logo */}
                     <div className="mb-6 mt-12">
-                        <div className="inline-block bg-white rounded-2xl p-2 shadow-lg border border-gray-200">
+                        <div className="inline-block bg-white rounded-2xl p-2 pb-6 shadow-lg border border-gray-200">
                             <img
-                                src="/logoheader.png"
+                                src="/hemufooterlogo.png"
                                 alt="Hemu Logo"
-                                className="w-96 h-36 object-contain mx-auto"
+                                className="w-96 h-36 object-contain mx-auto "
                             />
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const HemuJoint = () => {
                     </div>
 
                     {/* Partnership Arrow */}
-                    <div className="flex justify-center mb-8">
+                    {/* <div className="flex justify-center mb-8">
                         <div className="flex items-center space-x-4">
                             <div className="w-16 h-0.5 bg-gradient-to-r from-green-500 to-yellow-500"></div>
                             <div className="bg-gradient-to-r from-green-500 to-yellow-500 rounded-full p-3">
@@ -99,10 +99,10 @@ const HemuJoint = () => {
                             </div>
                             <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-500 to-green-500"></div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Combined Venture - Hemu */}
-                    <div className="max-w-2xl mx-auto">
+                    {/* <div className="max-w-2xl mx-auto">
                         <div className="bg-gradient-to-br from-green-500 to-yellow-500 rounded-xl p-8 text-white text-center relative overflow-hidden">
                             <div className="absolute inset-0 bg-black opacity-5"></div>
                             <div className="relative z-10">
@@ -122,7 +122,7 @@ const HemuJoint = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Value Proposition */}
