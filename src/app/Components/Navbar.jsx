@@ -17,13 +17,15 @@ const Navbar = () => {
       title: "Renewable Energy Generation",
       icon: <Zap className="w-5 h-5" />,
       href: "https://kecbiofuel.com/",
-      color: "text-blue-600"
+      color: "text-blue-600",
+      external: true
     },
     {
       title: "Agri – Inputs",
       icon: <Leaf className="w-5 h-5" />,
       href: "https://kisanexperience.com/",
-      color: "text-green-600"
+      color: "text-green-600",
+      external: true
     },
     {
       title: "Dairy, Bakery & Food Enterprises",
@@ -94,13 +96,14 @@ const Navbar = () => {
                 {activeDropdown === "projects" && (
                   <div className="absolute top-full left-0 mt-2 w-60 bg-white shadow-2xl rounded-2xl border border-gray-100 py-4 z-50 animate-fadeIn">
                     {/* Header */}
-                    <div className="px-6 pb-3 border-b border-gray-100 hover:bg-gradient-to-r hover:from-yellow-50 hover:to-orange-50 transition-all duration-200">
+                    <div className="px-6 pb-2 pt-1 border-b border-gray-100 hover:bg-gradient-to-r hover:from-yellow-100 hover:to-orange-50 transition-all duration-200">
                       <Link href="/project">
                         <h3 className="text-lg font-bold text-gray-800 hover:text-green-700 cursor-pointer">
                           Our Projects
                         </h3>
+
+                        <p className="text-sm text-gray-500 ">Explore our innovative solutions</p>
                       </Link>
-                      <p className="text-sm text-gray-500 mt-1">Explore our innovative solutions</p>
                     </div>
 
                     {/* Project Items */}
