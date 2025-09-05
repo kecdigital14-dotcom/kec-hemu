@@ -80,7 +80,7 @@ const CarbonCredit = () => {
                 icon: "🔍",
                 details: {
                   activity: "Identify eligible clean energy and sustainable agriculture activities under HEMU",
-                  deliverables: "Baseline carbon footprint analysis, stakeholder mapping, documentation",
+                  // deliverables: "Baseline carbon footprint analysis, stakeholder mapping, documentation",
                   standards: "Verra (VCS), Gold Standard, or UNFCCC CDM protocols",
                   outcome: "Registered climate project ready for validation and monitoring"
                 }
@@ -122,13 +122,13 @@ const CarbonCredit = () => {
               <div key={index} className="group relative">
                 {/* Step Number */}
                 <div className="flex justify-center mb-4">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${phase.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-16 h-16 bg-gradient-to-r ${phase.color} rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg transform `}>
                     {phase.step}
                   </div>
                 </div>
                 
                 {/* Card */}
-                <div className="bg-white rounded-xl shadow-lg p-6 h-full border border-gray-100 group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-white rounded-xl shadow-lg p-6 h-[440px] border border-gray-100">
                   <div className="text-center mb-4">
                     <span className="text-3xl mb-2 block">{phase.icon}</span>
                     <h3 className="font-bold text-gray-800 text-lg leading-tight">{phase.title}</h3>
@@ -137,7 +137,7 @@ const CarbonCredit = () => {
                   <div className="space-y-3 text-sm">
                     <div>
                       <span className="font-semibold text-green-700">Activity:</span>
-                      <p className="text-gray-600 mt-1">{phase.details.activity}</p>
+                      <p className="text-gray-600 mt-1 text-justify">{phase.details.activity}</p>
                     </div>
                     
                     {phase.details.deliverables && (
@@ -150,7 +150,7 @@ const CarbonCredit = () => {
                     {phase.details.support && (
                       <div>
                         <span className="font-semibold text-green-700">Support:</span>
-                        <p className="text-gray-600 mt-1">{phase.details.support}</p>
+                        <p className="text-gray-600 mt-1 text-justify">{phase.details.support}</p>
                       </div>
                     )}
                     
@@ -163,7 +163,7 @@ const CarbonCredit = () => {
                     
                     <div>
                       <span className="font-semibold text-yellow-600">Outcome:</span>
-                      <p className="text-gray-600 mt-1">{phase.details.outcome}</p>
+                      <p className="text-gray-600 mt-1 text-justify">{phase.details.outcome}</p>
                     </div>
                   </div>
                 </div>

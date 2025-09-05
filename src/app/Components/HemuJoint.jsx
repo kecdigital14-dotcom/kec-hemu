@@ -1,21 +1,20 @@
 import React from 'react';
-import { Users, Sprout, Milk, Building2 } from 'lucide-react';
+import { Users, Building2 } from 'lucide-react';
+import AgriDairy from './AgriDairy';
+// import AgriDairy from './AgriDairy';
 
 const HemuJoint = () => {
     const partnerCompanies = [
         {
-            name: "UCDF",
             logoSrc: "/ucdflogo.avif",
             specialty: "Dairy Processing & Distribution",
             description: "Modern dairy processing facilities, quality control, and supply chain management",
             color: "bg-green-600"
         },
         {
-            name: "KEC",
             logoSrc: "/keclogo.png",
-            specialty: "Smart Farming Technology",
+            specialty: "Farm To Fuel",
             description: "Advanced IoT sensors, precision agriculture, and crop optimization systems",
-            
             color: "bg-yellow-500"
         }
     ];
@@ -27,20 +26,25 @@ const HemuJoint = () => {
                 <div className="text-center mb-8">
                     {/* Hemu Logo */}
                     <div className="mb-6 mt-12">
-                        <div className="inline-block bg-white rounded-2xl p-2 pb-6 shadow-lg border border-gray-200">
+                        <div className="inline-block bg-white rounded-2xl p-2 shadow-lg border border-gray-200">
                             <img
-                                src="/hemufooterlogo.png"
+                                src="/hemulogoupdated.png"
                                 alt="Hemu Logo"
-                                className="w-96 h-36 object-contain mx-auto "
+                                className="w-96 h-60 object-contain mx-auto"
                             />
                         </div>
                     </div>
 
-                    <h1 className="text-4xl font-bold text-gray-800 mb-2">Hemu Joint Ventures</h1>
+                    {/* <h1 className="text-4xl font-bold text-gray-800 mb-2">Hemu Joint Ventures</h1> */}
+                    <div className="relative text-center  py-8 rounded-2xl w-[800px] mx-auto">
+                        <h1 className="text-4xl sm:text-4xl lg:text-6xl font-extrabold text-green-700 drop-shadow-md ">
+                            Hemu Joint{" "}
+                            <span className="text-yellow-400">Ventures</span>
+                        </h1>
+                    </div>
                     <p className="text-lg text-gray-600 font-medium mb-4">Innovating Agriculture Through Strategic Partnerships</p>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        A strategic partnership between UCDF, KEC, and Hemu revolutionizing agriculture and dairy through innovation,
-                        technology, and sustainable practices
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto font-sans">
+                        UCDF and KEC, through their joint venture, have launched HEMU — a pioneering initiative set to revolutionize agriculture and dairy by driving innovation, harnessing technology, and championing sustainable practices.
                     </p>
                 </div>
 
@@ -49,7 +53,7 @@ const HemuJoint = () => {
                     <div className="flex items-center justify-center mb-8">
                         <div className="flex items-center space-x-4">
                             <Building2 className="w-6 h-6 text-green-600" />
-                            <span className="text-lg font-semibold text-gray-700">Partnership Structure</span>
+                            <span className="text-lg font-semibold text-gray-700">Joint Venture Structure</span>
                             <Users className="w-6 h-6 text-yellow-500" />
                         </div>
                     </div>
@@ -61,7 +65,6 @@ const HemuJoint = () => {
                                 <div key={index} className="relative">
                                     <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-16 border border-gray-200 hover:shadow-md transition-all duration-300">
                                         <div className="text-center mb-4">
-                                            {/* ✅ Fixed: Show partner logo */}
                                             <img
                                                 src={partner.logoSrc}
                                                 alt={`${partner.name} Logo`}
@@ -89,120 +92,14 @@ const HemuJoint = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Partnership Arrow */}
-                    {/* <div className="flex justify-center mb-8">
-                        <div className="flex items-center space-x-4">
-                            <div className="w-16 h-0.5 bg-gradient-to-r from-green-500 to-yellow-500"></div>
-                            <div className="bg-gradient-to-r from-green-500 to-yellow-500 rounded-full p-3">
-                                <span className="text-white font-bold text-lg">=</span>
-                            </div>
-                            <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-500 to-green-500"></div>
-                        </div>
-                    </div> */}
-
-                    {/* Combined Venture - Hemu */}
-                    {/* <div className="max-w-2xl mx-auto">
-                        <div className="bg-gradient-to-br from-green-500 to-yellow-500 rounded-xl p-8 text-white text-center relative overflow-hidden">
-                            <div className="absolute inset-0 bg-black opacity-5"></div>
-                            <div className="relative z-10">
-                                <div className="mb-4">
-                                    <div className="w-96 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                                          <img
-                                src="/logoheader.png"
-                                alt="Hemu Logo"
-                                className="w-96 h-36 object-contain mx-auto"
-                            />
-                                    </div>
-                                </div>
-                                <h2 className="text-3xl font-bold mb-2">Hemu Joint Ventures</h2>
-                                <p className="text-lg font-medium mb-4">Combined Agritech & Dairy Solutions</p>
-                                <div className="inline-block bg-white bg-opacity-20 px-4 py-2 rounded-full">
-                                    <span className="text-sm font-medium text-gray-700">UCDF + KEC = Hemu</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
 
-                {/* Value Proposition */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                    {/* Agritech Focus */}
-                    <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white">
-                        <div className="flex items-center mb-4">
-                            <Sprout className="w-8 h-8 mr-3" />
-                            <h2 className="text-2xl font-bold">Agritech Innovation</h2>
-                        </div>
-                        
-                        {/* Agritech Image */}
-                        <div className="mb-6 bg-white bg-opacity-10 rounded-xl p-1">
-                            <img
-                                src="/homeimage3.jpg"
-                                alt="Smart Farming Technology"
-                                className="w-full h-72 object-cover rounded-lg"
-                            />
-                        </div>
-                        
-                        <p className="text-green-100 mb-6">
-                            Leveraging cutting-edge technology to transform traditional farming practices
-                            with smart sensors, data analytics, and precision agriculture solutions.
-                        </p>
-                        <div className="space-y-3">
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-green-300 rounded-full mr-3"></div>
-                                <span className="text-green-100">IoT-enabled crop monitoring</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-green-300 rounded-full mr-3"></div>
-                                <span className="text-green-100">AI-powered yield optimization</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-green-300 rounded-full mr-3"></div>
-                                <span className="text-green-100">Sustainable farming practices</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Dairy Focus */}
-                    <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl p-8 text-white">
-                        <div className="flex items-center mb-4">
-                            <Milk className="w-8 h-8 mr-3" />
-                            <h2 className="text-2xl font-bold">Dairy Excellence</h2>
-                        </div>
-                        
-                        {/* Dairy Image */}
-                        <div className="mb-6 bg-white bg-opacity-10 rounded-xl p-1">
-                            <img
-                                src="/homeimage2.jpg"
-                                alt="Modern Dairy Operations"
-                                 className="w-full h-72 object-cover rounded-lg"
-                            />
-                        </div>
-                        
-                        <p className="text-yellow-100 mb-6">
-                            Modernizing dairy operations from farm to table with advanced processing
-                            technologies, quality assurance, and efficient distribution networks.
-                        </p>
-                        <div className="space-y-3">
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-yellow-300 rounded-full mr-3"></div>
-                                <span className="text-yellow-100">Automated milking systems</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-yellow-300 rounded-full mr-3"></div>
-                                <span className="text-yellow-100">Cold chain optimization</span>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="w-2 h-2 bg-yellow-300 rounded-full mr-3"></div>
-                                <span className="text-yellow-100">Quality tracking & certification</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/* Scrollable Agritech & Dairy Sections */}
+                <AgriDairy />
 
                 {/* Partnership Benefits */}
                 <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Partnership Synergies</h2>
+                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Joint Venture Synergies</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">

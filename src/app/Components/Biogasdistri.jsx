@@ -5,13 +5,19 @@ const Biogasdistri = () => {
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            BIOGAS BOTTLING &<br />
-            <span className="text-[#205D34]">DISTRIBUTION</span>
-          </h1>
-          <div className="w-24 h-1 bg-blue-800 mx-auto mb-8"></div>
+        <div className="text-center mb-12 relative">
+          {/* Background Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl"></div>
+
+          <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-8 rounded-2xl w-[800px] mx-auto">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md ">
+              Compressed Biogas{" "}
+              <span className="text-yellow-300">& Its Setup</span>
+            </h1>
+          </div>
+
         </div>
+
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
@@ -37,8 +43,8 @@ const Biogasdistri = () => {
                 Vertical Overview
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                This vertical leverages livestock and organic waste to produce compressed biogas (CBG). 
-                The energy is then bottled and distributed for household, transportation, and small 
+                This vertical leverages livestock and organic waste to produce compressed biogas (CBG).
+                The energy is then bottled and distributed for household, transportation, and small
                 industry use, building a sustainable energy economy.
               </p>
             </div>

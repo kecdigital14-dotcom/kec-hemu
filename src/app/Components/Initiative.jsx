@@ -4,7 +4,7 @@ export default function Initiative() {
   return (
     <div className="relative  overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 h-[480px]">
+      <div className="absolute inset-0 h-[550px]">
         <img
           src="/initativeabout.jpg"
           alt="Hands protecting a plant seedling"

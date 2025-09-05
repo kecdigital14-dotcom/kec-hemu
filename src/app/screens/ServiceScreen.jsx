@@ -13,8 +13,8 @@ const ServiceScreen = () => {
   return (
     <div>
         <Navbar/>
-        <Aboutbanner bannertitle="About us" 
-                        bannerImage="/Servicepagebanne.jpeg" 
+        <Aboutbanner bannertitle="Our Services" 
+                        bannerImage="/allpagesbanner.png" 
                        />
         <HemuServices/>
         <AreaofBusiness/>

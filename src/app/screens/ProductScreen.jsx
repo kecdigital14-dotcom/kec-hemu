@@ -10,8 +10,8 @@ const ServiceScreen = () => {
   return (
     <div>
       <Navbar />
-      <Aboutbanner bannertitle="About us"
-        bannerImage="/Shopnowpagebanne.jpeg"
+      <Aboutbanner bannertitle="Shop Now"
+        bannerImage="/productpagebanner.png"
       />
       <ProductList />
       <Footer />

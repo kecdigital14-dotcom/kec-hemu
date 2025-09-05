@@ -47,22 +47,21 @@ const TechnologicalInnovations = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 mt-16">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 py-20">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
+      <div className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 py-16">
+        {/* <div className="absolute inset-0 bg-black opacity-10"></div> */}
         <div className="relative max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Title */}
             <div>
               <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-                <span className="text-white font-semibold text-sm">INNOVATION FOCUS</span>
+                <span className="text-gray-900 font-semibold text-sm">INNOVATION FOCUS</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-bold text-white  leading-tight">
                 TECHNOLOGICAL<br />
                 <span className="text-yellow-200">INNOVATIONS</span>
               </h1>
-              <div className="w-24 h-1 bg-yellow-400 mb-6"></div>
               <p className="text-xl text-white opacity-90 leading-relaxed">
                 Driving rural transformation through practical and sustainable technological solutions
               </p>

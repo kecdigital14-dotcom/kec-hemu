@@ -1,266 +1,138 @@
 import React from 'react';
 
 const HemuServices = () => {
+  const services = [
+    {
+      id: 'compressed-biogas',
+      title: 'Compressed Biogas (CBG) Plants',
+      description: 'Setting up plants for converting cattle dung and organic waste into usable biogas for energy and transport. Our CBG solutions help rural communities achieve energy independence while managing waste effectively.',
+      // icon: '🏭',
+      image: '/Serviceslist6.jpeg',
+      // gradient: 'from-green-600 to-green-700',
+      borderColor: 'border-green-500',
+      hoverColor: 'hover:border-yellow-400'
+    },
+    {
+      id: 'solar-energy',
+      title: 'Solar Energy Solutions',
+      description: 'Providing comprehensive solar power solutions for rural infrastructure, including water pumps, cold storages, training centers, and residential installations. Complete EPC, PMC, O&M services.',
+      // icon: '☀️',
+      image: '/Serviceslist5.jpg',
+      // gradient: 'from-yellow-500 to-yellow-600',
+      borderColor: 'border-yellow-500',
+      hoverColor: 'hover:border-green-400'
+    },
+    {
+      id: 'agri-input',
+      title: 'Agri Input, Organic Manure & Mineral Supplements',
+      description: 'Creating premium bio-fertilizers and cattle supplements from organic materials for improved soil health and enhanced livestock nutrition. Sustainable farming solutions for better yields.',
+      // icon: '🌱',
+      image: '/Serviceslist2.jpg',
+      // gradient: 'from-green-500 to-green-600',
+      borderColor: 'border-green-400',
+      hoverColor: 'hover:border-yellow-500'
+    },
+    {
+      id: 'dairy-bakery',
+      title: 'Dairy & Bakery Units',
+      description: 'Supporting rural dairy production and bakery micro-enterprises for local consumption and market supply. Complete setup and training for sustainable rural businesses.',
+      // icon: '🥛',
+      image: '/Serviceslist3.jpg',
+      // gradient: 'from-yellow-400 to-yellow-500',
+      borderColor: 'border-yellow-400',
+      hoverColor: 'hover:border-green-500'
+    },
+    {
+      id: 'allied-business',
+      title: 'Allied Business Services',
+      description: 'Comprehensive business solutions including Energy, Agriculture, FMCG, FMCD, Skill Training, Trading & Services. Empowering rural communities through diverse business opportunities.',
+      // icon: '🤝',
+      image: '/Serviceslist4.jpg',
+      // gradient: 'from-green-700 to-yellow-600',
+      borderColor: 'border-green-600',
+      hoverColor: 'hover:border-yellow-400'
+    }
+  ];
+
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-green-50 to-yellow-50 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-green-200 rounded-full opacity-20 blur-xl"></div>
-      <div className="absolute bottom-20 right-20 w-40 h-40 bg-yellow-200 rounded-full opacity-15 blur-2xl"></div>
-      <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-green-300 rounded-full opacity-25 blur-lg"></div>
-      <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-yellow-300 rounded-full opacity-20 blur-lg"></div>
+    <div className="relative min-h-screen bg-gradient-to-br from-green-50/10 via-yellow-50/10 to-green-50/10 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch min-h-[600px]">
 
-          {/* Left Column */}
-          <div className="space-y-8 flex flex-col justify-between">
-            {/* Title, Image and Description */}
-            <div className="space-y-8">
-              <div className="relative text-center">
-                <div className="absolute -top-8 -left-4 w-24 h-24 bg-yellow-200 rounded-full opacity-40 blur-lg"></div>
-                <h1 className="text-5xl font-bold text-green-700 tracking-tight relative z-10">
-                  SERVICES
-                </h1>
-              </div>
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="relative inline-block">
+            
+             <div className="relative text-center py-4 rounded-2xl w-full max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-4xl lg:text-6xl font-extrabold text-green-700 drop-shadow-md">
+              OUR{" "}
+              <span className="text-yellow-400">SERVICES</span>
+            </h1>
+          </div>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 leading-relaxed">
+              HEMU offers comprehensive services for rural sustainability and economic empowerment across Uttarakhand
+            </p>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <div className="flex items-center space-x-4 bg-white px-8 py-4 rounded-full shadow-lg border-2 border-green-200">
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-green-700 font-bold">Empowering Rural Communities</span>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse delay-150"></div>
+            </div>
+          </div>
+        </div>
 
+        {/* Services Grid */}
+        <div className="space-y-20">
+          {services.map((service, index) => (
+            <div 
+              key={service.id}
+              className={`group relative ${
+                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+              } flex flex-col lg:flex-row items-center gap-12 lg:gap-16`}
+            >
               {/* Service Image */}
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl w-[550px] h-[300px] mx-auto border-4 border-yellow-100">
-                <img
-                  src="/herobannerthreenew.png"
-                  alt="Biogas and Renewable Energy"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-green-700 font-semibold text-sm">HEMU Solutions</span>
+              <div className="flex-1 relative">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl w-full h-80 lg:h-96 border-4 border-white">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />   
+                  {/* HEMU Brand Badge */}
+                  <div className="absolute bottom-6 right-6">
+                    <div className="bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2 border border-green-200">
+                      <span className="text-green-700 font-semibold text-sm">HEMU Solutions</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-2xl border-2 border-green-200">
-                <div className="flex items-center mb-4">
-                  <div className="w-1 h-12 bg-gradient-to-b from-green-500 to-yellow-500 rounded-full mr-4"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              {/* Service Content */}
+              <div className="flex-1 space-y-6">
+                <div className={`inline-flex items-center space-x-4 px-6 py-3 rounded-full text-gray-600 shadow-lg`}>
+                  {/* <span className="text-3xl bg-white/20 p-2 rounded-full">{service.icon}</span> */}
+                  <span className="font-semibold">Service #{index + 1}</span>
                 </div>
-                <p className="text-gray-700 leading-6 text-sm">
-                  HEMU offers a comprehensive range of services aimed at fostering rural
-                  sustainability and economic empowerment. These include the
-                  development Renewable & Biofuel Industry such as Compressed Biogas
-                  (CBG) plants for clean energy generation from cattle and agricultural
-                  waste, and the implementation of solar energy solutions to power rural
-                  infrastructure (EPC, PMC, O & M).
+
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight group-hover:text-green-700 transition-colors duration-300">
+                  {service.title}
+                </h2>
+
+                <div className="w-20 h-1 bg-gradient-to-r from-green-500 to-yellow-500 rounded-full"></div>
+
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {service.description}
                 </p>
+               
               </div>
             </div>
-
-            {/* First Service Card */}
-            <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden border-2 border-green-200 hover:border-yellow-400">
-              <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <div className="w-full h-full border-4 border-green-300 rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 opacity-10">
-                <div className="w-full h-full bg-yellow-200 rounded-full"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="text-3xl bg-gradient-to-br from-green-100 to-yellow-100 p-3 rounded-xl border border-green-200">
-                    🏭
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-green-800 tracking-tight transition-colors group-hover:text-green-600">
-                      Compressed Biogas (CBG) Plants
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="text-gray-700 leading-6 text-sm mb-4">
-                  Setting up plants for converting cattle dung and organic waste into usable biogas for energy and transport.
-                </p>
-
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                </div>
-
-                <div className="absolute top-6 right-6 transform group-hover:translate-x-0 translate-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - 4 Service Cards */}
-          <div className="space-y-6 flex flex-col justify-center">
-            {/* Solar Energy Solutions */}
-            <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden border-2 border-yellow-200 hover:border-green-400">
-              <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <div className="w-full h-full border-4 border-yellow-300 rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 opacity-10">
-                <div className="w-full h-full bg-green-200 rounded-full"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="text-3xl bg-gradient-to-br from-yellow-100 to-green-100 p-3 rounded-xl border border-yellow-200">
-                    ☀️
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-green-800 tracking-tight transition-colors group-hover:text-yellow-600">
-                      Solar Energy Solutions
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="text-gray-700 leading-6 text-sm mb-4">
-                  Providing solar power for rural infrastructure, including water pumps, cold storages, and training centers.
-                </p>
-
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                </div>
-
-                <div className="absolute top-6 right-6 transform group-hover:translate-x-0 translate-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Agri Input */}
-            <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden border-2 border-green-200 hover:border-yellow-400">
-              <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <div className="w-full h-full border-4 border-green-300 rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 opacity-10">
-                <div className="w-full h-full bg-yellow-200 rounded-full"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="text-3xl bg-gradient-to-br from-green-100 to-yellow-100 p-3 rounded-xl border border-green-200">
-                    🌱
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-green-800 tracking-tight transition-colors group-hover:text-green-600">
-                      Agri Input, Organic Manure and Mineral Supplements
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="text-gray-700 leading-6 text-sm mb-4">
-                  Creating bio-fertilizers and cattle supplements from organic materials for improved soil and livestock health.
-                </p>
-
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                </div>
-
-                <div className="absolute top-6 right-6 transform group-hover:translate-x-0 translate-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Dairy & Bakery Units */}
-            <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden border-2 border-yellow-200 hover:border-green-400">
-              <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <div className="w-full h-full border-4 border-yellow-300 rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 opacity-10">
-                <div className="w-full h-full bg-green-200 rounded-full"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="text-3xl bg-gradient-to-br from-yellow-100 to-green-100 p-3 rounded-xl border border-yellow-200">
-                    🥛
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-green-800 tracking-tight transition-colors group-hover:text-yellow-600">
-                      Dairy & Bakery Units
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="text-gray-700 leading-6 text-sm mb-4">
-                  Supporting rural dairy production and bakery micro-enterprises for local consumption and market supply.
-                </p>
-
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                </div>
-
-                <div className="absolute top-6 right-6 transform group-hover:translate-x-0 translate-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Allied Business Card */}
-            <div className="group relative bg-gradient-to-br from-green-600 to-yellow-500 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden text-white">
-              <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-                <div className="w-full h-full border-4 border-white rounded-full"></div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 opacity-10">
-                <div className="w-full h-full bg-white rounded-full"></div>
-              </div>
-
-              <div className="relative z-10">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="text-3xl bg-white/20 backdrop-blur-sm p-3 rounded-xl border border-white/30">
-                    🤝
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold tracking-tight transition-colors">
-                      Allied Business
-                    </h3>
-                  </div>
-                </div>
-
-                <p className="leading-6 text-sm mb-4 text-white/90">
-                  Energy, Agri, FMCG, FMCD, Skill Training, Trading & Services
-                </p>
-
-                <div className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-yellow-200 rounded-full mr-2"></div>
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                </div>
-
-                <div className="absolute top-6 right-6 transform group-hover:translate-x-0 translate-x-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Bottom Decorative Section */}
-        <div className="mt-20 text-center">
-          <div className="inline-flex items-center space-x-4 bg-white px-8 py-4 rounded-full shadow-lg border-2 border-green-200">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-green-700 font-bold">Empowering Rural Uttarakhand</span>
-            <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse delay-150"></div>
-          </div>
-        </div>
+     
       </div>
     </div>
   );

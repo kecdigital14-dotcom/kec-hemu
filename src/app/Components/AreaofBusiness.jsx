@@ -126,16 +126,15 @@ const AreaofBusiness = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 py-20">
+      <div className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 py-12">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-6xl mx-auto px-6 text-center">
-          <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-            <span className="text-white font-semibold text-sm">BUSINESS PORTFOLIO</span>
+          <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-2">
+            <span className="text-gray-900 font-semibold text-sm">BUSINESS PORTFOLIO</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-2 leading-tight">
             Area of <span className="text-yellow-200">Businesses</span>
           </h1>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
           <p className="text-xl text-white opacity-90 max-w-4xl mx-auto leading-relaxed">
             Comprehensive business solutions driving sustainable rural development across multiple sectors
           </p>
@@ -158,7 +157,7 @@ const AreaofBusiness = () => {
                 )}
                 
                 {/* Card */}
-                <div className="bg-white rounded-2xl shadow-lg p-8 h-full border border-gray-100 group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+                <div className="bg-white rounded-2xl shadow-lg p-8 h-full border border-gray-100 ">
                   {/* Category Tag */}
                   <div className="mb-4">
                     <span className="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
@@ -168,7 +167,7 @@ const AreaofBusiness = () => {
                   
                   {/* Icon and Title */}
                   <div className="text-center mb-6">
-                    <div className={`w-20 h-20 bg-gradient-to-r ${area.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <div className={`w-20 h-20 bg-gradient-to-r ${area.color} rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                       <span className="text-3xl">{area.icon}</span>
                     </div>
                     <h3 className="font-bold text-gray-800 text-xl leading-tight mb-3">{area.title}</h3>
@@ -192,7 +191,7 @@ const AreaofBusiness = () => {
                   </div>
                   
                   {/* Decorative Element */}
-                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${area.color} rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${area.color} rounded-b-2xl opacity-0 `}></div>
                 </div>
               </div>
             ))}
@@ -216,13 +215,13 @@ const AreaofBusiness = () => {
                   const isEven = index % 2 === 0;
                   
                   return (
-                    <div key={index} className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div key={index} className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl border border-gray-200 overflow-hidden">
                       {/* Category Image */}
                       <div className="relative h-48 overflow-hidden">
                         <img 
                           src={categoryInfo.image} 
                           alt={category}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                         

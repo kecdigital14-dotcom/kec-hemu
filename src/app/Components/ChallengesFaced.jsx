@@ -2,42 +2,49 @@ import React from 'react';
 
 const ChallengesFaced = () => {
   const challenges = [
-    {
-      title: "Limited Awareness & Acceptance",
-      description: "Lack of awareness of renewable energy technologies among rural communities",
-      icon: "🎯",
-      color: "from-green-700 to-green-600"
-    },
-    {
-      title: "Infrastructural Constraints",
-      description: "Remote areas that hinder timely project execution and maintenance",
-      icon: "🏗️",
-      color: "from-yellow-500 to-yellow-400"
-    },
-    {
-      title: "Financial Viability & Credit Access",
-      description: "Persistent hurdle for small farmers and entrepreneurs",
-      icon: "💰",
-      color: "from-green-700 to-green-600"
-    },
-    {
-      title: "Skilled Manpower Shortage",
-      description: "Managing technical operations like CBG plants and solar systems",
-      icon: "👥",
-      color: "from-yellow-500 to-yellow-400"
-    },
-    {
-      title: "Regulatory Approvals",
-      description: "Complex approval processes that can slow project progress",
-      icon: "📋",
-      color: "from-green-700 to-green-600"
-    },
-    {
-      title: "Waste Collection & Logistics",
-      description: "Coordination challenges in waste collection and logistics management",
-      icon: "🚛",
-      color: "from-yellow-500 to-yellow-400"
-    }
+  {
+    title: "Awareness & Community Engagement",
+    description:
+      "Strengthening outreach programs to enhance understanding and acceptance of renewable energy technologies in rural areas.",
+    icon: "🎯",
+    color: "from-green-700 to-green-600",
+  },
+  {
+    title: "Infrastructure Development",
+    description:
+      "Expanding connectivity and support systems to ensure timely execution and smooth maintenance of projects in remote regions.",
+    icon: "🏗️",
+    color: "from-yellow-500 to-yellow-400",
+  },
+  {
+    title: "Financial Inclusion & Credit Support",
+    description:
+      "Creating tailored financing models and accessible credit facilities to empower small farmers and entrepreneurs.",
+    icon: "💰",
+    color: "from-green-700 to-green-600",
+  },
+  {
+    title: "Capacity Building & Skilled Workforce",
+    description:
+      "Developing specialized training and certification programs to build a strong talent pool for CBG plants, solar systems, and other technologies.",
+    icon: "👥",
+    color: "from-yellow-500 to-yellow-400",
+  },
+  {
+    title: "Streamlined Regulatory Processes",
+    description:
+      "Promoting simplified approval mechanisms to accelerate project implementation and foster ease of doing business.",
+    icon: "📋",
+    color: "from-green-700 to-green-600",
+  },
+  {
+    title: "Efficient Waste Management & Logistics",
+    description:
+      "Building coordinated systems for effective waste collection, transport, and utilization to maximize resource efficiency.",
+    icon: "🚛",
+    color: "from-yellow-500 to-yellow-400",
+  },
+
   ];
 
   return (
@@ -72,7 +79,7 @@ const ChallengesFaced = () => {
                   </div>
                   <h2 className="text-2xl font-bold text-gray-800">Mission Impact</h2>
                 </div>
-                <p className="text-gray-700 leading-relaxed text-lg font-sans">
+                <p className="text-gray-700 leading-relaxed text-lg ">
                   Despite its impactful mission, HEMU faces several key challenges in implementing sustainable rural development at scale. These obstacles require continuous community engagement, capacity building, and strong policy support to overcome.
                 </p>
               </div>
@@ -86,7 +93,7 @@ const ChallengesFaced = () => {
         <div className="mb-12">
           <div className="text-center mb-12">
             <div className="inline-block bg-white rounded-full px-8 py-4 shadow-lg mb-6">
-              <h2 className="text-3xl font-bold text-gray-800">Key Challenges Overview</h2>
+              <h2 className="text-3xl font-bold text-gray-800">Opportunities for Advancing Renewable Energy</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Understanding and addressing these challenges is crucial for HEMU's continued success in rural sustainable development

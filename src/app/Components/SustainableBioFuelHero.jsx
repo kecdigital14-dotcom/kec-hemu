@@ -3,11 +3,14 @@
 import React from 'react';
 import { Play, Leaf, Factory, Zap } from 'lucide-react';
 
+
+
+
 const HemuHeroSection = ({
   badgeText = "Dairy Excellence",
-  title = "Revolutionizing Rural Dairy",
-  highlight = "Milk & AgriTech",
-  subtitle = "Solutions",
+  title = "Revolutionizing Rural",
+  highlight = " Agriculture & Dairy",
+  subtitle = "",
   description = "Empowering rural communities with advanced dairy processing, sustainable farming practices, and clean energy integration. Enhancing productivity while ensuring quality and profitability for farmers.",
   videoTitle = "Modern Dairy Process",
   videoDescription = "Watch how we process fresh milk into high-quality dairy products",
@@ -74,7 +77,7 @@ const HemuHeroSection = ({
             </div>
             
             {/* Description */}
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-xl text-justify">
               {description}
             </p>
             

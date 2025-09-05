@@ -10,9 +10,9 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-     <Aboutbanner bannertitle="About us" 
-                bannerImage="/Contactuspagebanne.jpeg" 
-               />
+    <Aboutbanner bannertitle="Contact Us"
+                bannerImage="/allpagesbanner.png"
+            />
    <ContactInfo />
    <Accordian/>
       <Footer/>

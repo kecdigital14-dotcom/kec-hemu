@@ -13,8 +13,8 @@ const page = () => {
   return (
     <div>
         <Navbar />
-        <Aboutbanner bannertitle="About us" 
-                bannerImage="/Projectspagebanner.png" 
+        <Aboutbanner bannertitle="Our Projects" 
+                 bannerImage="/allpagesbanner.png" 
                />
         <HemuHeroSection/>
         <CarbonCredit />

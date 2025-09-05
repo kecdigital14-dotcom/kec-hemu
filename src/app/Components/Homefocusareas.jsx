@@ -16,20 +16,31 @@ const Homefocusareas = () => {
           {/* Left Column - Content */}
           <div className="space-y-6">
             <div className="mb-8">
-              <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent mb-2">
+              <div className="text-center mb-2 relative">
+                {/* Background Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl"></div>
+
+                <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-4 rounded-2xl w-[500px] mx-auto">
+                  <h1 className="text-4xl sm:text-4xl lg:text-3xl font-extrabold text-white drop-shadow-md ">
+                    HEMU - Our {" "}
+                    <span className="text-yellow-300">Core Focus Areas</span>
+                  </h1>
+                </div>
+
+              </div>
+              {/* <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent mb-2">
                 HEMU - Our Core Focus Areas
-              </h1>
-              <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full"></div>
+              </h1> */}
             </div>
-            
+
             <div className="space-y-2 text-justify">
               {/* Focus Area 1 */}
               <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-green-100 hover:shadow-lg transition-all duration-300">
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className='text-md text-gray-600'>Renewable, Biofuel Energy Generation, Carbon credit</strong> - Development of 
-                    decentralized energy infrastructure, including biogas and solar power, to reduce rural 
+                    <strong className='text-md text-gray-600'>Renewable, Biofuel Energy Generation, Carbon credit</strong> - Development of
+                    decentralized energy infrastructure, including biogas and solar power, to reduce rural
                     dependency on fossil fuels.
                   </p>
                 </div>
@@ -40,8 +51,8 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Agricultural Waste Processing, Agri - Inputs (All type of Seeds, Pesticides, 
-                    Fertilizer), Contract farming</strong> - Conversion of cattle waste and farm residues into 
+                    <strong className="text-gray-600">Agricultural Waste Processing, Agri - Inputs (All type of Seeds, Pesticides,
+                      Fertilizer), Contract farming</strong> - Conversion of cattle waste and farm residues into
                     bio-energy, compost, and organic manure to support a circular rural economy.
                   </p>
                 </div>
@@ -52,8 +63,8 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Dairy, Bakery & Cafeteria & Food Micro-Enterprises & other Agri allied 
-                    business</strong> - Support for rural dairy operations and bakery units that enhance local 
+                    <strong className="text-gray-600">Dairy, Bakery & Cafeteria & Food Micro-Enterprises & other Agri allied
+                      business</strong> - Support for rural dairy operations and bakery units that enhance local
                     income generation and value addition in the food supply chain.
                   </p>
                 </div>
@@ -114,9 +125,9 @@ const Homefocusareas = () => {
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Services EPC, PMC, O & M, Trading, Supply, Manufacturing or Contract 
-                    manufacturing, procurement, All type turnkey installation services of above 
-                    products</strong>
+                    <strong className="text-gray-600">Services EPC, PMC, O & M, Trading, Supply, Manufacturing or Contract
+                      manufacturing, procurement, All type turnkey installation services of above
+                      products</strong>
                   </p>
                 </div>
               </div>
@@ -182,58 +193,64 @@ const Homefocusareas = () => {
         </div>
       </div>
 
-       {/* UCDF Objectives Section */}
-        <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100 mt-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">HEMU Strategic Objectives</h2>
-            <p className="text-gray-700 max-w-2xl mx-auto ">
-              Our comprehensive approach to rural development and farmer empowerment
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "💰",
-                title: "Increase Farmers' Income",
-                description: "Create employment opportunities and enhance rural livelihoods"
-              },
-              {
-                icon: "🥛",
-                title: "Promote Dairy Farming",
-                description: "Support commercial dairy farming and establish milk booths"
-              },
-              {
-                icon: "🤝",
-                title: "Connect Cooperatives",
-                description: "Bridge cooperatives with corporate entities for mutual growth"
-              },
-              {
-                icon: "📈",
-                title: "Market-Oriented Produce",
-                description: "Facilitate direct market access for agricultural products"
-              },
-              {
-                icon: "🚫",
-                title: "Eliminate Middlemen",
-                description: "Ensure farmers receive fair prices for their products"
-              },
-              {
-                icon: "🛠️",
-                title: "Support Services",
-                description: "Provide comprehensive support services to farming communities"
-              }
-            ].map((objective, index) => (
-              <div key={index} className="group hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl h-full border border-green-200 hover:shadow-xl transition-shadow">
-                  <div className="text-3xl mb-4">{objective.icon}</div>
-                  <h3 className="text-lg font-bold mb-3" style={{color: '#205D34'}}>{objective.title}</h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">{objective.description}</p>
+      {/* UCDF Objectives Section */}
+      <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100 mt-16">
+        <div className="text-center mb-12">
+          {/* <h2 className="text-3xl font-bold text-gray-900 mb-4">HEMU Strategic Objectives</h2> */}
+           <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-4 rounded-2xl w-[500px] mx-auto">
+                  <h1 className="text-4xl sm:text-4xl lg:text-3xl font-extrabold text-white drop-shadow-md ">
+                    HEMU Strategic {" "}
+                    <span className="text-yellow-300">Objectives</span>
+                  </h1>
                 </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-700 max-w-2xl mx-auto mt-4">
+            Our comprehensive approach to rural development and farmer empowerment
+          </p>
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              icon: "💰",
+              title: "Increase Farmers' Income",
+              description: "Create employment opportunities and enhance rural livelihoods"
+            },
+            {
+              icon: "🥛",
+              title: "Promote Dairy Farming",
+              description: "Support commercial dairy farming and establish milk booths"
+            },
+            {
+              icon: "🤝",
+              title: "Connect Cooperatives",
+              description: "Bridge cooperatives with corporate entities for mutual growth"
+            },
+            {
+              icon: "📈",
+              title: "Market-Oriented Produce",
+              description: "Facilitate direct market access for agricultural products"
+            },
+            {
+              icon: "🚫",
+              title: "Eliminate Middlemen",
+              description: "Ensure farmers receive fair prices for their products"
+            },
+            {
+              icon: "🛠️",
+              title: "Support Services",
+              description: "Provide comprehensive support services to farming communities"
+            }
+          ].map((objective, index) => (
+            <div key={index} className="group hover:scale-105 transition-all duration-300">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl h-full border border-green-200 hover:shadow-xl transition-shadow">
+                <div className="text-3xl mb-4">{objective.icon}</div>
+                <h3 className="text-lg font-bold mb-3" style={{ color: '#205D34' }}>{objective.title}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">{objective.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

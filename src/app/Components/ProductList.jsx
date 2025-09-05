@@ -9,8 +9,45 @@ const ProductList = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [favorites, setFavorites] = useState(new Set());
 
-  // Dairy product data with HEMU brand theme
+  // Product data with HEMU brand theme - Dairy & Agriculture
   const products = [
+    {
+      id: 7,
+      name: "Organic Vermicompost Fertilizer",
+      price: 8.99,
+      originalPrice: 12.00,
+      image: "/prod1.png",
+      rating: 4.8,
+      reviews: 234,
+      category: "fertilizers",
+      badge: "Popular",
+      description: "Premium organic vermicompost for soil enrichment and plant growth"
+    },
+    {
+      id: 8,
+      name: "PSB Bio Fertilizer (Phosphate)",
+      price: 15.99,
+      originalPrice: null,
+      image: "/prodcarbonenhancer.png",
+      rating: 4.7,
+      reviews: 145,
+      category: "fertilizers",
+      badge: null,
+      description: "Phosphate Solubilizing Bacteria for enhanced nutrient uptake"
+    },
+    {
+      id: 9,
+      name: "Azotobacter Bio Fertilizer",
+      price: 18.50,
+      originalPrice: 22.00,
+      image: "/prodprom.png",
+      rating: 4.6,
+      reviews: 187,
+      category: "fertilizers",
+      badge: "Sale",
+      description: "Nitrogen-fixing bacteria for sustainable crop nutrition"
+    },
+    
     {
       id: 1,
       name: "Fresh Whole Milk",
@@ -28,10 +65,10 @@ const ProductList = () => {
       name: "Aged Cheddar Cheese",
       price: 12.99,
       originalPrice: null,
-      image: "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&h=400&fit=crop",
+      image: "/gheeimage.jpeg",
       rating: 4.9,
       reviews: 189,
-      category: "cheese",
+      category: "ghee",
       badge: null,
       description: "Premium aged cheddar with rich, sharp flavor"
     },
@@ -82,16 +119,26 @@ const ProductList = () => {
       category: "cream",
       badge: null,
       description: "Rich heavy cream perfect for cooking and baking"
-    }
+    },
+    // FERTILIZERS
+    
+ 
+
+
+  
   ];
 
   const categories = [
     { id: 'all', name: 'All Products' },
     { id: 'milk', name: 'Fresh Milk' },
+    { id: 'ghee', name: 'Ghee' },
+    { id: 'fertilizers', name: 'Fertilizers' },
+    { id: 'pesticides', name: 'Pesticides' },
     { id: 'cheese', name: 'Cheese' },
     { id: 'yogurt', name: 'Yogurt' },
     { id: 'butter', name: 'Butter' },
-    { id: 'cream', name: 'Cream' }
+    { id: 'cream', name: 'Cream' },
+
   ];
 
   const filteredProducts = products.filter(product => {
@@ -116,15 +163,19 @@ const ProductList = () => {
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+          className="mx-auto h-80 object-cover group-hover:scale-110 transition-transform duration-500"
         />
         {product.badge && (
-          <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold text-white ${
-            product.badge === 'Sale' ? 'bg-red-500' : 
-            product.badge === 'New' ? 'bg-green-600' : 
-            product.badge === 'Popular' ? 'bg-purple-500' :
-            'bg-yellow-400 text-gray-800'
-          }`}>
+          <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold text-white ${product.badge === 'Sale' ? 'bg-red-500' :
+              product.badge === 'New' ? 'bg-green-600' :
+                product.badge === 'Popular' ? 'bg-purple-500' :
+                  product.badge === 'Organic' ? 'bg-green-700' :
+                    product.badge === 'Bio' ? 'bg-blue-600' :
+                      product.badge === 'Professional' ? 'bg-gray-700' :
+                        product.badge === 'Premium' ? 'bg-indigo-600' :
+                          product.badge === 'Strong' ? 'bg-orange-600' :
+                            'bg-yellow-400 text-gray-800'
+            }`}>
             {product.badge}
           </span>
         )}
@@ -137,13 +188,13 @@ const ProductList = () => {
           />
         </button>
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-green-600 transition-colors">
           {product.name}
         </h3>
         <p className="text-gray-600 text-sm mb-3">{product.description}</p>
-        
+
         <div className="flex items-center mb-3">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
@@ -155,7 +206,7 @@ const ProductList = () => {
           </div>
           <span className="text-sm text-gray-600 ml-2">({product.reviews})</span>
         </div>
-        
+
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-green-600">${product.price}</span>
@@ -164,7 +215,7 @@ const ProductList = () => {
             )}
           </div>
         </div>
-        
+
         <button className="w-full bg-gradient-to-r from-green-600 to-yellow-400 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-yellow-500 transition-all duration-300 flex items-center justify-center space-x-2 transform hover:scale-105">
           <ShoppingCart className="w-5 h-5" />
           <span>Add to Cart</span>
@@ -178,8 +229,8 @@ const ProductList = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-green-600 to-yellow-400 text-white py-6">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-2">HEMU Dairy</h1>
-          <p className="text-xl opacity-90">Fresh, premium dairy products delivered to your doorstep</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">HEMU Agri Store</h1>
+          <p className="text-xl opacity-90">Fresh dairy products & premium agricultural solutions delivered to your doorstep</p>
         </div>
       </div>
 
@@ -191,7 +242,7 @@ const ProductList = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Search dairy products..."
+              placeholder="Search dairy & agricultural products..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
@@ -223,11 +274,10 @@ const ProductList = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                selectedCategory === category.id
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${selectedCategory === category.id
                   ? 'bg-blue-600 text-white shadow-lg'
                   : 'bg-white text-gray-700 border border-gray-300 hover:border-green-600 hover:text-green-600'
-              }`}
+                }`}
             >
               {category.name}
             </button>
@@ -242,11 +292,10 @@ const ProductList = () => {
         </div>
 
         {/* Product Grid */}
-        <div className={`grid gap-8 ${
-          viewMode === 'grid' 
-            ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
+        <div className={`grid gap-8 ${viewMode === 'grid'
+            ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
             : 'grid-cols-1'
-        }`}>
+          }`}>
           {filteredProducts.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -261,7 +310,7 @@ const ProductList = () => {
           </div>
         )}
       </div>
-     
+
     </div>
   );
 };

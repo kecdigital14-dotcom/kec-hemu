@@ -9,7 +9,7 @@ const DairyDevelopment = () => {
     {
       title: "Rural Milk Collection & Aggregation",
       icon: <Droplets className="w-8 h-8" />,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-green-600 to-green-700",
       points: [
         "Establish decentralized milk procurement centers at village level",
         "Ensure farmer training in quality, hygiene, and early-morning delivery",
@@ -20,7 +20,7 @@ const DairyDevelopment = () => {
     {
       title: "Chilling & Primary Processing",
       icon: <Snowflake className="w-8 h-8" />,
-      color: "from-cyan-500 to-blue-600",
+      color: "from-yellow-400 to-yellow-500",
       points: [
         "Organize collection of raw milk in chilling centers within 2-3 hours",
         "Utilize bulk milk coolers (BMCs) to maintain quality standards",
@@ -31,7 +31,7 @@ const DairyDevelopment = () => {
     {
       title: "Value-Added Product Manufacturing",
       icon: <Package className="w-8 h-8" />,
-      color: "from-green-500 to-emerald-600",
+      color: "from-green-500 to-green-600",
       points: [
         "Process chilled milk into high-demand products like:",
         "Ghee, paneer, curd, and flavored milk",
@@ -42,7 +42,7 @@ const DairyDevelopment = () => {
     {
       title: "Market Linkage & Export Readiness",
       icon: <TrendingUp className="w-8 h-8" />,
-      color: "from-purple-500 to-pink-500",
+      color: "from-yellow-500 to-yellow-600",
       points: [
         "Develop forward linkages with schools, retail chains, and hotels",
         "Leverage logistics networks for regional distribution",
@@ -66,10 +66,10 @@ const DairyDevelopment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-700">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-green-700">
                 DAIRY DEVELOPMENT
               </h1>
-              <div className="w-32 h-1 bg-gray-700 mb-4"></div>
+              <div className="w-32 h-1 bg-yellow-500 mb-4"></div>
               <p className="text-lg md:text-xl leading-relaxed text-gray-700">
                 Strengthening the rural dairy value chain through modernized collection, 
                 chilling, and processing infrastructure with emphasis on value-added 
@@ -93,7 +93,7 @@ const DairyDevelopment = () => {
 
       {/* Interactive Process Flow */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+        <h2 className="text-4xl font-bold text-center mb-4 text-green-800">
           Complete Dairy Value Chain
         </h2>
         <p className="text-center text-gray-600 mb-12 text-lg">
@@ -108,11 +108,11 @@ const DairyDevelopment = () => {
               onClick={() => setActiveSection(index)}
               className={`p-6 rounded-xl border transition-all duration-300 ${
                 activeSection === index
-                  ? 'border-gray-800 bg-gray-800 text-white shadow-lg'
-                  : 'border-gray-200 bg-white text-gray-800 shadow-sm'
+                  ? 'border-green-600 bg-green-600 text-white shadow-lg'
+                  : 'border-gray-200 bg-white text-gray-800 shadow-sm hover:border-yellow-400'
               }`}
             >
-              <div className={`${activeSection === index ? 'text-white' : 'text-gray-600'} mb-3`}>
+              <div className={`${activeSection === index ? 'text-white' : 'text-green-600'} mb-3`}>
                 {section.icon}
               </div>
               <h3 className={`font-bold text-sm ${activeSection === index ? 'text-white' : 'text-gray-800'}`}>
@@ -125,10 +125,10 @@ const DairyDevelopment = () => {
         {/* Active Section Details */}
         <div className="bg-white rounded-xl shadow-lg p-8 mb-16 border border-gray-200">
           <div className="flex items-center mb-6">
-            <div className="p-4 rounded-xl bg-gray-800 text-white mr-6">
+            <div className="p-4 rounded-xl bg-green-600 text-white mr-6">
               {sections[activeSection].icon}
             </div>
-            <h3 className="text-3xl font-bold text-gray-900">
+            <h3 className="text-3xl font-bold text-green-800">
               {sections[activeSection].title}
             </h3>
           </div>
@@ -136,7 +136,7 @@ const DairyDevelopment = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {sections[activeSection].points.map((point, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="w-2 h-2 rounded-full bg-gray-800 mt-3"></div>
+                <div className="w-2 h-2 rounded-full bg-yellow-500 mt-3"></div>
                 <p className="text-gray-700 leading-relaxed">
                   {point}
                 </p>
@@ -146,16 +146,16 @@ const DairyDevelopment = () => {
         </div>
 
         {/* Key Offerings */}
-        <div className="bg-gray-800 rounded-xl p-8 text-white">
+        <div className="bg-green-700 rounded-xl p-8 text-white">
           <h3 className="text-3xl font-bold mb-8 text-center">Key Offerings</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {keyOfferings.map((offering, index) => (
               <div key={index}>
-                <div className="bg-gray-700 rounded-xl p-6 transition-all duration-300">
-                  <div className="text-gray-300 mb-4">
+                <div className="bg-green-600 rounded-xl p-6 transition-all duration-300 hover:bg-yellow-500">
+                  <div className="text-yellow-200 mb-4">
                     {offering.icon}
                   </div>
-                  <p className="text-sm leading-relaxed text-gray-100">
+                  <p className="text-sm leading-relaxed text-white">
                     {offering.text}
                   </p>
                 </div>
