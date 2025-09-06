@@ -9,10 +9,10 @@ const Home3rdSection = () => {
           <div className="inline-flex items-center px-6 py-3 bg-blue-100 border border-blue-200 rounded-full mb-6">
             <span className="text-blue-800 text-sm font-semibold">🍞 BAKERY UNITS PROGRAM</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-700 leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-700 leading-tight mb-3">
             BAKERY UNITS
           </h1>
-          <p className="text-lg font-semibold text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
             HEMU promotes decentralized food processing by establishing bakery units in rural areas. 
             These units utilize locally available agricultural inputs and dairy products to create 
             nutritional food products and drive village-level entrepreneurship.

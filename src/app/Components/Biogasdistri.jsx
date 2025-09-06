@@ -9,10 +9,10 @@ const Biogasdistri = () => {
           {/* Background Gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl"></div>
 
-          <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-8 rounded-2xl w-[800px] mx-auto">
-            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md ">
+          <div className="relative text-center  py-8 rounded-2xl w-[800px] mx-auto">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold  text-green-800">
               Compressed Biogas{" "}
-              <span className="text-yellow-300">& Its Setup</span>
+              <span className="text-yellow-400">& Its Setup</span>
             </h1>
           </div>
 

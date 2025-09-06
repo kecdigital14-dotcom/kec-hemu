@@ -8,6 +8,7 @@ import CarbonCredit from '../Components/CarbonCredit'
 import TechnologicalInnovations from '../Components/TechnologicalInnovations';
 import HomecbgProcess from '../Components/HomecbgProcess';
 import HemuHeroSection from '../Components/SustainableBioFuelHero';
+import CbgProject from '../Components/CbgProject';
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
         <HemuHeroSection/>
         <CarbonCredit />
         <TechnologicalInnovations />
+         <CbgProject/>
            <HomecbgProcess/>
         <Footer />
     </div>

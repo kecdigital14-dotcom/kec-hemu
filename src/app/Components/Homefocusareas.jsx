@@ -1,8 +1,39 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Homefocusareas = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const images = [
+    { src: "/focus6.jpg", alt: "Biogas and Renewable Energy" },
+    { src: "/focus7.jpg", alt: "Dairy Processing" },
+    { src: "/focus3.jpg", alt: "Agricultural Processing" },
+    { src: "/focus4.jpg", alt: "Rural Development" },
+    { src: "/focus5.jpg", alt: "Mineral Water Production" },
+    { src: "/focus1.jpg", alt: "Sustainable Agriculture" }
+  ];
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
-    <div className="bg-gradient-to-br from-green-50 to-yellow-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-br from-green-50 to-yellow-50 py-16 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
@@ -15,24 +46,6 @@ const Homefocusareas = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - Content */}
           <div className="space-y-6">
-            <div className="mb-8">
-              <div className="text-center mb-2 relative">
-                {/* Background Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl"></div>
-
-                <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-4 rounded-2xl w-[500px] mx-auto">
-                  <h1 className="text-4xl sm:text-4xl lg:text-3xl font-extrabold text-white drop-shadow-md ">
-                    HEMU - Our {" "}
-                    <span className="text-yellow-300">Core Focus Areas</span>
-                  </h1>
-                </div>
-
-              </div>
-              {/* <h1 className="text-4xl font-bold bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent mb-2">
-                HEMU - Our Core Focus Areas
-              </h1> */}
-            </div>
-
             <div className="space-y-2 text-justify">
               {/* Focus Area 1 */}
               <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-green-100 hover:shadow-lg transition-all duration-300">
@@ -70,123 +83,101 @@ const Homefocusareas = () => {
                 </div>
               </div>
 
-              {/* Focus Area 4 */}
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-yellow-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
-                <div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Animal husbandry related business, Cattle feed, Mineral water</strong>
-                  </p>
-                </div>
-              </div>
-
-              {/* Focus Area 5 */}
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-green-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
-                <div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Skill Development & FTP, Rural Capacity Building</strong>
-                  </p>
-                </div>
-              </div>
-
-              {/* Focus Area 6 */}
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-yellow-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
-                <div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">FMCG & FMCD trading or Contract Mfg. Cowdung paints, Mosquito nets</strong>
-                  </p>
-                </div>
-              </div>
-
-              {/* Focus Area 7 */}
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-green-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
-                <div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Tourism</strong>
-                  </p>
-                </div>
-              </div>
-
-              {/* Focus Area 8 */}
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-yellow-100 hover:shadow-lg transition-all duration-300">
-                <div className="w-3 h-3 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
-                <div>
-                  <p className="text-gray-800 text-sm leading-relaxed">
-                    <strong className="text-gray-600">Allied business</strong>
-                  </p>
-                </div>
-              </div>
-
               {/* Focus Area 9 */}
               <div className="flex items-start space-x-3 p-4 rounded-lg bg-white/60 backdrop-blur-sm border border-green-100 hover:shadow-lg transition-all duration-300">
                 <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full mt-2 flex-shrink-0 shadow-sm"></div>
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
                     <strong className="text-gray-600">Services EPC, PMC, O & M, Trading, Supply, Manufacturing or Contract
-                      manufacturing, procurement, All type turnkey installation services of above
-                      products</strong>
+                      manufacturing, procurement,
+                      products</strong> All type turnkey installation services of above
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Images */}
-          <div className="space-y-4 mt-16">
-            {/* Top Row Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-green-200">
-                <img
-                  src="/focus6.jpg"
-                  alt="Biogas and Renewable Energy"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-200">
-                <img
-                  src="/focus7.jpg"
-                  alt="Dairy Processing"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+          {/* Right Column - Title and Carousel */}
+          <div className="space-y-8">
+            {/* Title moved to right column */}
+            <div className="text-center relative">
+              {/* FIXED: Changed from absolute inset-0 to absolute inset-x-0 and proper positioning */}
+              <div className="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl -z-10"></div>
+
+              <div className="relative text-center py-4 rounded-2xl">
+                <h1 className="text-4xl sm:text-4xl lg:text-4xl font-extrabold text-green-800">
+                  HEMU - Our {" "}
+                  <span className="text-yellow-300">Core Focus Areas</span>
+                </h1>
               </div>
             </div>
 
-            {/* Middle Row Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-200">
-                <img
-                  src="/focus3.jpg"
-                  alt="Agricultural Processing"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-green-200">
-                <img
-                  src="/focus4.jpg"
-                  alt="Rural Development"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            </div>
+            {/* Carousel */}
+            <div className="relative">
+              {/* Carousel Container */}
+              <div className="relative bg-gradient-to-br from-green-100 to-yellow-100 rounded-2xl overflow-hidden h-96 shadow-2xl border-2 border-green-200">
+                {/* Image Display */}
+                <div className="relative w-full h-full overflow-hidden">
+                  {images.map((image, index) => (
+                    <div
+                      key={index}
+                      className={`absolute inset-0 transition-all duration-500 ease-in-out ${
+                        index === currentSlide 
+                          ? 'opacity-100 transform translate-x-0' 
+                          : index < currentSlide 
+                          ? 'opacity-0 transform -translate-x-full'
+                          : 'opacity-0 transform translate-x-full'
+                      }`}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover"
+                      />
+                      {/* Image Overlay with Description */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                        <h3 className="text-white text-lg font-semibold">{image.alt}</h3>
+                      </div>
+                    </div>
+                  ))}
+                </div>
 
-            {/* Bottom Row Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-green-200">
-                <img
-                  src="/focus5.jpg"
-                  alt="Mineral Water Production"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+                {/* Navigation Arrows */}
+                <button
+                  onClick={prevSlide}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                >
+                  <ChevronLeft className="w-6 h-6 text-green-700" />
+                </button>
+
+                <button
+                  onClick={nextSlide}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                >
+                  <ChevronRight className="w-6 h-6 text-green-700" />
+                </button>
+
+                {/* Slide Indicators */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  {images.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                        index === currentSlide 
+                          ? 'bg-white scale-110' 
+                          : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-xl overflow-hidden h-56 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-yellow-200">
-                <img
-                  src="/focus1.jpg"
-                  alt="Sustainable Agriculture"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+
+              {/* Carousel Counter */}
+              <div className="text-center mt-4">
+                <span className="text-sm text-gray-600">
+                  {currentSlide + 1} of {images.length}
+                </span>
               </div>
             </div>
           </div>
@@ -195,15 +186,14 @@ const Homefocusareas = () => {
 
       {/* UCDF Objectives Section */}
       <div className="bg-white rounded-3xl shadow-2xl p-12 border border-gray-100 mt-16">
-        <div className="text-center mb-12">
-          {/* <h2 className="text-3xl font-bold text-gray-900 mb-4">HEMU Strategic Objectives</h2> */}
-           <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-4 rounded-2xl w-[500px] mx-auto">
-                  <h1 className="text-4xl sm:text-4xl lg:text-3xl font-extrabold text-white drop-shadow-md ">
-                    HEMU Strategic {" "}
-                    <span className="text-yellow-300">Objectives</span>
-                  </h1>
-                </div>
-          <p className="text-gray-700 max-w-2xl mx-auto mt-4">
+        <div className="text-center mb-10">
+          <div className="relative text-center py-4 rounded-2xl w-[500px] mx-auto">
+            <h1 className="text-4xl sm:text-4xl lg:text-4xl font-extrabold text-green-800 ">
+              HEMU Strategic {" "}
+              <span className="text-yellow-400">Objectives</span>
+            </h1>
+          </div>
+          <p className="text-gray-700 max-w-2xl mx-auto">
             Our comprehensive approach to rural development and farmer empowerment
           </p>
         </div>

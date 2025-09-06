@@ -21,19 +21,15 @@ const AboutScreen = () => {
   return (
     <div>
       <Navbar/>
-          {/* <Herohome/> */}
-       <Aboutbanner />
+         <Aboutbanner bannertitle="About Us" 
+                             bannerImage="/allpagesbanner.png" 
+                            />
        <Home2ndsection/>
          <VisionAndMission/>
        <Homefocusareas/>
-     
-  
       <Objectives/>
       <Initiative/>
       <PioneeringPathSection/>
-     
-      {/* <OperationKec/> */}
-  
       <Dairy/>
            {/* <Accordian/> */}
       {/* <Abouttestimonials/> */}

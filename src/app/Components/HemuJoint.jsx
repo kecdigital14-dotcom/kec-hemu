@@ -72,7 +72,7 @@ const HemuJoint = () => {
                                             />
                                             <h3 className="text-7xl font-bold text-gray-600 mt-2">{partner.name}</h3>
                                             <div
-                                                className={`inline-block px-3 py-1 rounded-full text-white text-lg font-medium ${partner.color} mt-2`}
+                                                className={`inline-block px-4 py-2 rounded-full text-white text-lg font-sans font-medium ${partner.color} mt-2`}
                                             >
                                                 {partner.specialty}
                                             </div>

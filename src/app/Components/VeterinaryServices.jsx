@@ -76,9 +76,12 @@ const VeterinaryServices = () => {
           <div className="flex justify-center mb-2">
             <Activity className="w-16 h-16 text-yellow-300" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Veterinary Services
-          </h1>
+            <div className="relative text-center py-4 rounded-2xl w-[500px] mx-auto">
+                                    <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-white">
+                                        Veterinary{" "}
+                                        <span className="text-yellow-300">Services</span>
+                                    </h1>
+                                </div>
 
         </div>
       </div>

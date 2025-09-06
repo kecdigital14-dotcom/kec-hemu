@@ -129,13 +129,13 @@ const AreaofBusiness = () => {
       <div className="relative overflow-hidden bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 py-12">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-6xl mx-auto px-6 text-center">
-          <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-2">
+          <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-4 py-1 mb-2">
             <span className="text-gray-900 font-semibold text-sm">BUSINESS PORTFOLIO</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-2 leading-tight">
-            Area of <span className="text-yellow-200">Businesses</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+            Area of <span className="text-yellow-200">Business</span>
           </h1>
-          <p className="text-xl text-white opacity-90 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-white opacity-90 max-w-3xl mx-auto leading-relaxed">
             Comprehensive business solutions driving sustainable rural development across multiple sectors
           </p>
         </div>

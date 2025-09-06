@@ -109,8 +109,8 @@ const IncentiveFarmer = () => {
         { title: "₹500Cr+", subtitle: "Farmer Income", icon: <TrendingUp className="w-8 h-8" /> }
     ];
 
-    const filteredIncentives = selectedCategory === 'all' 
-        ? incentives 
+    const filteredIncentives = selectedCategory === 'all'
+        ? incentives
         : incentives.filter(item => item.category === selectedCategory);
 
     return (
@@ -120,28 +120,35 @@ const IncentiveFarmer = () => {
                 {/* Subtle Background Elements */}
                 <div className="absolute top-20 left-20 w-72 h-72 bg-green-100/30 rounded-full blur-3xl animate-pulse"></div>
                 <div className="absolute bottom-20 right-20 w-96 h-96 bg-yellow-100/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                
-                <div className="relative max-w-7xl mx-auto px-6 py-24">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+                <div className="relative max-w-6xl mx-auto px-6 py-24">
+                    <div className="grid lg:grid-cols-2 gap-10 items-center">
                         {/* Left Content */}
                         <div className="space-y-2">
-                            <div className="inline-flex items-center bg-gradient-to-r from-green-600 to-yellow-400 rounded-2xl px-6 py-3 shadow-lg hover:scale-105 transition-all duration-300">
+                            <div className="inline-flex items-center bg-gradient-to-r from-green-600 to-yellow-400 rounded-2xl px-4 py-3 shadow-lg hover:scale-105 transition-all duration-300">
                                 <Wheat className="w-5 h-5 mr-3 text-white" />
                                 <span className="text-sm font-bold text-white tracking-wider">HEMU FARMER EMPOWERMENT</span>
                                 {/* <Sparkles className="w-4 h-4 ml-3 text-yellow-200 animate-spin" /> */}
                             </div>
-                            
-                            <h1 className="text-4xl lg:text-6xl font-black text-gray-900 leading-tight">
+
+                            <h1 className="text-3xl lg:text-5xl font-black text-gray-900 leading-tight">
                                 Empower Your
                                 <br />
                                 <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                                     Farming Future
                                 </span>
                             </h1>
-                            
-                            <p className="text-xl text-gray-700 leading-relaxed max-w-2xl ">
-                                Transform your dairy farming journey with comprehensive support programs, 
+
+                            <p className="text-[15px] text-justify text-gray-700 leading-relaxed max-w-lg">
+                                Transform your dairy farming journey with comprehensive support programs,
                                 fair pricing, and cutting-edge agricultural innovations across Uttarakhand.
+                                We empower farmers by providing access to modern infrastructure, skill development,
+                                and sustainable practices that enhance productivity.
+                                Through financial inclusion and market linkages, we ensure farmers receive
+                                fair value for their produce while reducing dependency on intermediaries.
+                                Our mission is to build resilient rural communities where farmers can thrive,
+                                achieve long-term stability, and contribute to a sustainable future.
+
                             </p>
 
                             <div className="flex flex-wrap gap-4">
@@ -155,19 +162,6 @@ const IncentiveFarmer = () => {
                                     Learn More
                                 </button>
                             </div>
-                            
-                            {/* Stats Cards - Only Satisfaction Rate and Support Available moved here */}
-                            <div className="grid grid-cols-2 gap-4 mt-8">
-                                {leftFeatures.map((feature, index) => (
-                                    <div key={index} className="group bg-white border border-gray-200 rounded-2xl p-4 hover:border-green-300 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                        <div className="text-green-600 mb-2 group-hover:scale-110 transition-transform duration-300">
-                                            {feature.icon}
-                                        </div>
-                                        <div className="text-2xl font-black text-gray-900 mb-1">{feature.title}</div>
-                                        <div className="text-gray-600 font-medium text-sm">{feature.subtitle}</div>
-                                    </div>
-                                ))}
-                            </div>
                         </div>
 
                         {/* Right Content - Hero Image with remaining stats */}
@@ -175,28 +169,18 @@ const IncentiveFarmer = () => {
                             {/* Hero Image */}
                             <div className="relative group">
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-yellow-400/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                                <div className="relative bg-white rounded-3xl p-2 shadow-xl border border-gray-200 overflow-hidden group-hover:shadow-2xl transition-all duration-500">
-                                    <img 
-                                        src="/empowerfarmernew1.jpg" 
-                                        alt="Happy dairy farmers with cows in green pasture" 
-                                        className="w-full h-96 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700"
+                                <div className="relative bg-white rounded-2xl p-2 shadow-xl border border-gray-100 overflow-hidden group-hover:shadow-2xl transition-all duration-500">
+                                    <img
+                                        src="/empowerfarmernew1.jpg"
+                                        alt="Happy dairy farmers with cows in green pasture"
+                                        className="w-full h-96 object-cover rounded-xl"
                                     />
                                     <div className="absolute inset-2 rounded-2xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
                             </div>
-                            
+
                             {/* Remaining Stats Cards - Happy Farmers and Farmer Income */}
-                            <div className="grid grid-cols-2 gap-4">
-                                {rightFeatures.map((feature, index) => (
-                                    <div key={index} className="group bg-white border border-gray-200 rounded-2xl p-4 hover:border-green-300 hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                        <div className="text-green-600 mb-2 group-hover:scale-110 transition-transform duration-300">
-                                            {feature.icon}
-                                        </div>
-                                        <div className="text-2xl font-black text-gray-900 mb-1">{feature.title}</div>
-                                        <div className="text-gray-600 font-medium text-sm">{feature.subtitle}</div>
-                                    </div>
-                                ))}
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -210,21 +194,19 @@ const IncentiveFarmer = () => {
                             <button
                                 key={category.id}
                                 onClick={() => setSelectedCategory(category.id)}
-                                className={`group flex items-center px-6 py-3 rounded-2xl font-bold transition-all duration-300 ${
-                                    selectedCategory === category.id
+                                className={`group flex items-center px-4 py-2 rounded-2xl font-bold transition-all duration-300 ${selectedCategory === category.id
                                         ? 'bg-gradient-to-r from-green-600 to-yellow-400 text-white shadow-lg scale-105 shadow-green-200/30'
                                         : 'bg-gray-50 hover:bg-gradient-to-r hover:from-green-50 hover:to-yellow-50 text-gray-700 hover:text-gray-900 hover:scale-105 hover:shadow-md border border-gray-200 hover:border-green-300'
-                                }`}
+                                    }`}
                             >
                                 <div className="group-hover:rotate-12 transition-transform duration-300">
                                     {category.icon}
                                 </div>
                                 <span className="ml-2 mr-3">{category.name}</span>
-                                <div className={`text-xs px-2 py-1 rounded-full ${
-                                    selectedCategory === category.id 
-                                        ? 'bg-white/20 text-white' 
+                                <div className={`text-xs px-2 py-1 rounded-full ${selectedCategory === category.id
+                                        ? 'bg-white/20 text-white'
                                         : 'bg-gray-200 text-gray-600'
-                                }`}>
+                                    }`}>
                                     {category.count}
                                 </div>
                             </button>
@@ -236,19 +218,19 @@ const IncentiveFarmer = () => {
             {/* Redesigned Incentives Section */}
             <div className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-16 space-y-6">
+                    <div className="text-center mb-12 space-y-4">
                         <h2 className="text-5xl font-black text-gray-900">
                             <span className="bg-gradient-to-r from-green-600 to-yellow-400 bg-clip-text text-transparent">
                                 Comprehensive
                             </span>
                             <br />Support Programs
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                            Discover how our innovative programs are designed to maximize your farming potential 
+                        <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
+                            Discover how our innovative programs are designed to maximize your farming potential
                             and create lasting prosperity for your family and community.
                         </p>
                     </div>
-                    
+
                     {/* Simple Grid */}
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {filteredIncentives.map((incentive) => (
@@ -264,7 +246,7 @@ const IncentiveFarmer = () => {
                                     <h3 className="text-xl font-bold text-gray-900 mb-4">
                                         {incentive.title}
                                     </h3>
-                                    
+
                                     <p className="text-gray-600 mb-6 leading-relaxed">
                                         {incentive.description}
                                     </p>
@@ -273,7 +255,7 @@ const IncentiveFarmer = () => {
                                         <span className="bg-gradient-to-r from-green-600 to-yellow-400 text-white text-sm font-semibold px-3 py-1 rounded-full">
                                             {incentive.impact}
                                         </span>
-                                        
+
                                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 group-hover:bg-gradient-to-r group-hover:from-green-600 group-hover:to-yellow-400 group-hover:text-white transition-all duration-300">
                                             <ChevronRight className="w-4 h-4" />
                                         </div>
@@ -289,13 +271,13 @@ const IncentiveFarmer = () => {
             <div className="py-8 bg-white">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <div className="bg-gradient-to-br from-green-50 to-yellow-50 border border-green-100 rounded-3xl p-12 max-w-4xl mx-auto shadow-lg">
-                 
-                        
+
+
                         <blockquote className="text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
-                            "HEMU's support programs transformed our small dairy farm into a thriving business. 
+                            "HEMU's support programs transformed our small dairy farm into a thriving business.
                             The fair pricing and timely payments gave us the stability we needed to grow."
                         </blockquote>
-                        
+
                         <div className="flex items-center justify-center space-x-4">
                             <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-yellow-400 rounded-full flex items-center justify-center shadow-md">
                                 <Users className="w-8 h-8 text-white" />

@@ -9,13 +9,13 @@ const Home2ndsection = () => {
           <div className="inline-flex items-center px-6 py-3 bg-green-100 border border-green-200 rounded-full">
             <span className="text-green-800 text-sm font-semibold" style={{ color: '#205D34' }}>🤝 Strategic JOINT VENTURE</span>
           </div>
-          <div className="relative text-center py-6 rounded-2xl w-full max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-4xl lg:text-6xl font-extrabold text-green-700 drop-shadow-md">
+          <div className="relative text-center pt-6 pb-2 rounded-2xl w-full max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-green-700 drop-shadow-md">
               ABOUT{" "}
               <span className="text-yellow-400">US</span>
             </h1>
           </div>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover how two industry leaders joined forces to create HEMU - an integrated rural development initiative
           </p>
         </div>
@@ -27,7 +27,7 @@ const Home2ndsection = () => {
 
             {/* UCDF */}
             <div className="group">
-              <div className="bg-white rounded-3xl min-h-[400px]  shadow-xl hover:shadow-2xl transition-all duration-300 px-6 py-6 text-center border border-gray-100 hover:scale-105 flex flex-col">
+              <div className="bg-white rounded-3xl min-h-[400px] shadow-xl  px-6 py-6 text-center border border-gray-100 flex flex-col">
                 <div className="">
                   <div className="h-24 flex items-center justify-center">
                     <img
@@ -66,7 +66,7 @@ const Home2ndsection = () => {
 
             {/* KEC */}
             <div className="group">
-              <div className="bg-white rounded-3xl min-h-[380px] shadow-xl hover:shadow-2xl transition-all duration-300 px-6 py-6 text-center border border-gray-100 hover:scale-105 flex flex-col">
+              <div className="bg-white rounded-3xl min-h-[380px] shadow-xl px-6 py-6 text-center border border-gray-100 flex flex-col">
                 <div className="mb-4">
                   <div className="h-24 flex items-center justify-center mb-4">
                     <img

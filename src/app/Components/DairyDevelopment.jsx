@@ -70,10 +70,8 @@ const DairyDevelopment = () => {
                 DAIRY DEVELOPMENT
               </h1>
               <div className="w-32 h-1 bg-yellow-500 mb-4"></div>
-              <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-                Strengthening the rural dairy value chain through modernized collection, 
-                chilling, and processing infrastructure with emphasis on value-added 
-                product manufacturing to improve farmer income and regional dairy trade.
+              <p className="text-base md:text-base leading-relaxed text-gray-700 text-justify">
+                Strengthening the rural dairy value chain through modernized collection, chilling, and processing infrastructure with emphasis on value-added product manufacturing to improve farmer income and regional dairy trade. By promoting sustainable practices, skill training, and market linkages, we empower rural communities to build scalable and profitable dairy enterprises. Our initiatives focus on enhancing milk quality, reducing post-harvest losses, and creating opportunities for women-led dairy cooperatives. With strong integration of technology and rural entrepreneurship, we aim to transform dairy into a reliable source of livelihood and regional economic growth.
               </p>
             </div>
             

@@ -16,12 +16,12 @@ const VisionAndMission = () => {
                             {/* <h2 className="text-4xl sm:text-5xl font-bold text-gray-800">
                                 Leading  <span className="text-green-600">Future</span>
                             </h2> */}
-                            <div className="text-center mb-2 relative">
+                            <div className="text-center relative">
                                 {/* Background Gradient */}
                                 <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-yellow-400 opacity-10 rounded-2xl blur-2xl"></div>
 
-                                <div className="relative text-center  bg-gradient-to-r from-[#0C6530] via-[#1C7C3E] to-[#B59A2E] py-4 rounded-2xl w-[500px] mx-auto">
-                                    <h1 className="text-4xl sm:text-4xl lg:text-4xl font-extrabold text-white drop-shadow-md ">
+                                <div className="relative text-center py-4 rounded-2xl w-[500px] mx-auto">
+                                    <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-green-800">
                                         Leading the{" "}
                                         <span className="text-yellow-300">Future</span>
                                     </h1>
@@ -37,11 +37,11 @@ const VisionAndMission = () => {
 
                     {/* Vision Card */}
                     <div className="group">
-                        <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border-l-8 border-green-500 hover:border-green-600 transform hover:-translate-y-2">
+                        <div className="bg-white rounded-3xl shadow-xl p-8 border-l-8 border-green-500">
 
                             {/* Vision Header */}
                             <div className="flex items-center mb-8">
-                                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+                                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
                                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -87,11 +87,11 @@ const VisionAndMission = () => {
 
                     {/* Mission Card */}
                     <div className="group">
-                        <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 border-l-8 border-yellow-500 hover:border-yellow-600 transform hover:-translate-y-2">
+                        <div className="bg-white rounded-3xl shadow-xl p-8 border-l-8 border-yellow-500 hover:border-yellow-600">
 
                             {/* Mission Header */}
                             <div className="flex items-center mb-8">
-                                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg group-hover:scale-110 transition-transform">
+                                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg ">
                                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                                     </svg>
