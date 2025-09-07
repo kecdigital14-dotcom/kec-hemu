@@ -5,47 +5,48 @@ const CbgProject = () => {
     const projects = [
         {
             id: 1,
-            title: "MATHURA CBG PLANT 4TPD",
+            title: "CBG PLANT 4TPD",
             image: "/Project3.jpg",
             tags: ["Biodiesel", "Ethanol", "Process Automation"],
-            description: "A modern CBG facility in Mathura with advanced process automation ensuring efficient biogas output. The plant is designed to reduce carbon emissions while maximizing renewable fuel generation. It empowers local farmers by utilizing cattle dung and organic waste effectively."
+            description: "A modern CBG facility with advanced process automation ensuring efficient biogas output. The plant is designed to reduce carbon emissions while maximizing renewable fuel generation. It empowers local farmers by utilizing cattle dung and organic waste effectively."
         },
         {
             id: 2,
-            title: "MATHURA CBG PLANT 4TPD",
+            title: "CBG PLANT 4TPD",
             image: "/Project4.jpg",
             tags: ["Pyrolysis", "Biogas", "Automation"],
-            description: "This Mathura plant integrates pyrolysis and automation for sustainable green energy solutions. The facility helps in converting organic waste into clean energy, reducing dependency on fossil fuels. Its automated systems ensure consistent performance with minimal human intervention."
+            description: "This plant integrates pyrolysis and automation for sustainable green energy solutions. The facility helps in converting organic waste into clean energy, reducing dependency on fossil fuels. Its automated systems ensure consistent performance with minimal human intervention."
         },
         {
             id: 3,
-            title: "MATHURA CBG PLANT 4TPD",
+            title: "CBG PLANT 4TPD",
             image: "/Project5.jpeg",
             tags: ["IoT Sensors", "Cloud Monitoring", "Logistics"],
-            description: "Equipped with IoT-based monitoring, this Mathura project ensures real-time analytics and logistics tracking. Cloud integration provides operators with instant data access for smarter decisions. The plant sets a benchmark for digital innovation in renewable energy production."
+            description: "Equipped with IoT-based monitoring, this project ensures real-time analytics and logistics tracking. Cloud integration provides operators with instant data access for smarter decisions. The plant sets a benchmark for digital innovation in renewable energy production."
         },
         {
             id: 4,
-            title: "PALWAL CBG PLANT 2TPD",
+            title: "CBG PLANT 2TPD",
             image: "/Project6.jpeg",
             tags: ["Biodiesel", "Process Control", "SCADA"],
-            description: "Palwal CBG facility with SCADA-driven process control for reliable energy and efficiency. The plant supports regional clean energy demand and promotes sustainable practices. It also serves as a model for scalable rural bioenergy projects across India."
+            description: "CBG facility with SCADA-driven process control for reliable energy and efficiency. The plant supports regional clean energy demand and promotes sustainable practices. It also serves as a model for scalable rural bioenergy projects across India."
         },
         {
             id: 5,
-            title: "PALWAL CBG PLANT 2TPD",
+            title: "CBG PLANT 2TPD",
             image: "/Project7.jpeg",
             tags: ["Automation", "Process Control", "SCADA"],
-            description: "This Palwal plant introduces automation and digital control systems for consistent energy output. The design ensures operational safety while minimizing downtime. Its advanced process control enhances fuel quality and optimizes resource utilization."
+            description: "This plant introduces automation and digital control systems for consistent energy output. The design ensures operational safety while minimizing downtime. Its advanced process control enhances fuel quality and optimizes resource utilization."
         },
         {
             id: 6,
-            title: "PALWAL CBG PLANT 2TPD",
+            title: "CBG PLANT 2TPD",
             image: "/Project8.jpeg",
             tags: ["Green Energy", "SCADA", "Sustainability"],
-            description: "A sustainable Palwal project designed for optimized energy production with smart monitoring tools. It contributes to reducing greenhouse gas emissions and improving rural energy security. The facility integrates eco-friendly operations with long-term economic benefits."
+            description: "A sustainable project designed for optimized energy production with smart monitoring tools. It contributes to reducing greenhouse gas emissions and improving rural energy security. The facility integrates eco-friendly operations with long-term economic benefits."
         }
     ];
+
 
 
     return (
@@ -54,7 +55,7 @@ const CbgProject = () => {
                 {/* Header Section */}
                 <div className="text-center mb-12">
                     <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                        My Projects
+                        CBG Commissioned
                     </h1>
                     <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-blue-500 mx-auto mb-3"></div>
                     <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -85,7 +86,7 @@ const CbgProject = () => {
                             {/* Project Content */}
                             <div className="p-6">
                                 <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-green-600 transition-colors duration-300">
-                                    {project.title}
+                                    {/* {project.title} */}
                                 </h3>
 
                                 <p className="text-gray-600 text-sm mb-4 line-clamp-3 text-justify">
