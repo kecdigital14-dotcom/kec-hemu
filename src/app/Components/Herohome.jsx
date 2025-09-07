@@ -4,9 +4,10 @@ import React, { useState, useEffect } from "react";
 const SimpleImageSlider = () => {
   // Replace with your actual image paths
   const images = [
-    "/banner1.png",
-    "/banner2.png", // Replace with your second image
-    "/banner3.png", // Replace with your third image
+    "/bannercanva1.png",
+    "/bannercanva2.png", // Replace with your second image
+    // "/chatgptbanner3.png", 
+    //  "/chatgptbanner4.png",
   
   ];
 
@@ -37,7 +38,7 @@ const SimpleImageSlider = () => {
   };
 
   return (
-    <section className="relative w-full h-screen bg-black overflow-hidden">
+    <section className="relative w-full h-[480px] bg-black overflow-hidden">
       {/* Image Slider Container */}
       <div className="relative w-full h-full">
         {/* Images */}
